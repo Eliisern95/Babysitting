@@ -29,12 +29,10 @@
                Condicions d'us de privacitat
             </H5>
         </div>
-
-        
-        
 </div>
-    <div class="text-center bg-dark">
-            <h2>Segueixnos</h2>
+    
+    <div class="text-center bg-dark border-top text-white">
+            <h5>Segueixnos</h5>
             <ul class="d-flex justify-content-center align-item-between">
                 <span>
                     <a href="#"><i class="fa fa-facebook-square fa4x"></i></a>
