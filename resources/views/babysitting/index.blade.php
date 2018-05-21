@@ -50,9 +50,9 @@
     <div class="collapse multi-collapse" id="multiCollapseExample1">
       <div class="card card-body">
           <p>COM FUNCIONA?</p>
-          <p>Buscas a una <b>cangur</b> o a una <b>cangur compartida</b>? Estem aquí per ajudar-te!</p>
+          <p>Busques a una <b>cangur</b> o a una <b>cangur compartida</b>? Estem aquí per ajudar-te!</p>
           <p>A babysitting milers de persones s'ofereixen per a cuidar nens i nenes!</p>
-          <!--Efecte collapse-->
+    <!--Efecte collapse-->
     <div id="accordion">
     <div class="card">
     <div class="card-header" id="headingOne">
@@ -115,6 +115,20 @@
           </div>
         </div>                        
       </div>
+    </div>
+    </div>
+  </div>
+</div>
+    
+    <div id="accordion2">
+    <div class="card2">
+    <div class="card-header2" id="headingOne2">
+      <h5 class="mb-0">
+        <button class="btn btn-link text-red"  data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+        Testimonis
+        </button>
+      </h5>
+    </div>
     </div>
   </div>
 </div>
