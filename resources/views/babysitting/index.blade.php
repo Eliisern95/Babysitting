@@ -1,30 +1,207 @@
 @extends ('babysitting.template')
 @section ('content')
 
+<!--Cos-->
+
+        <table>
+<tr>
+    <td>
+       <div style="float:left;width:300px;">Babysitting, cangurs a domicili</div>
+        <img src="{{asset('imatges/2.jpg')}}" width="1348px" height="500px">
+
+    </td>
+</tr>
+        </table>
+
+
+<!--Afecta card-->
+<div class="row p-3">
+  <div class="col-sm-4">
+    <div class="card bg-info text-white">
+      <div class="card-body"><!--Posar icono de rellotge-->
+        <h5 class="card-title text-center">Servei 24 hores</h5>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-4">
+    <div class="card bg-info text-white">
+      <div class="card-body"><!--Posar icono de persona-->
+        <h5 class="card-title text-center">De 0 a 14 anys</h5>
+      </div>
+    </div>
+  </div>
+   <div class="col-sm-4">
+    <div class="card bg-info text-white">
+      <div class="card-body"><!--Posar icono de euro-->
+        <h5 class="card-title text-center">Preus assequibles</h5>
+      </div>
+    </div>
+  </div> 
+</div>
+
+<!--Efecte Collapse-->
+      
+<p>
+  <a class="btn btn-primary" data-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Som una Familia</a>
+  <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">Sóc una Cangur</button>
+</p>
+<div class="row p-3">
+  <div class="col-md-6 col-md-offset-3">
+    <div class="collapse multi-collapse" id="multiCollapseExample1">
+      <div class="card card-body">
+          <p>COM FUNCIONA?</p>
+          <p>Buscas a una <b>cangur</b> o a una <b>cangur compartida</b>? Estem aquí per ajudar-te!</p>
+          <p>A babysitting milers de persones s'ofereixen per a cuidar nens i nenes!</p>
+          <!--Efecte collapse-->
+    <div id="accordion">
+    <div class="card">
+    <div class="card-header" id="headingOne">
+      <h5 class="mb-0">
+        <button class="btn btn-link text-red"  data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          Quin tipus d'atencció escullir? Necessito ajuda!
+        </button>
+      </h5>
+    </div>
+
+    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+      <div class="card-body">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header" id="headingTwo">
+      <h5 class="mb-0">
+        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          Puc confiar?
+        </button>
+      </h5>
+    </div>
+      
+    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+      <div class="card-body">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header" id="headingThree">
+      <h5 class="mb-0">
+        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          La web és gratuita?
+        </button>
+      </h5>
+    </div>
+      
+    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+      <div class="card-body">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+      </div>
+    </div>
+  </div>
+              
+  <div class="card">
+    <div class="card-header" id="headingThree">
+      <h5 class="mb-0">
+        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          Qui contracte a el/la cangur?
+        </button>
+      </h5>
+    </div>
+    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+      <div class="card-body">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+            </div>
+          </div>
+        </div>                        
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+    
+<div class="col-md-6 col-md-offset-3">
+    <div class="collapse multi-collapse" id="multiCollapseExample2">
+      <div class="card card-body">
+       <p>COM FUNCIONA?</p>
+          <p>Buscas a una <b>cangur</b> o a una <b>cangur compartida</b>? Estem aquí per ajudar-te!</p>
+          <p>A babysitting milers de persones s'ofereixen per a cuidar nens i nenes!</p>
+          <!--Efecta collapse-->
+           <div id="accordion">
+    <div class="card">
+    <div class="card-header" id="headingOne">
+      <h5 class="mb-0">
+        <button class="btn btn-link text-red"  data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          Quin tipus d'atencció escullir? Necessito ajuda!
+        </button>
+      </h5>
+    </div>
+
+    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+      <div class="card-body">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header" id="headingTwo">
+      <h5 class="mb-0">
+        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          Puc confiar?
+        </button>
+      </h5>
+    </div>
+      
+    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+      <div class="card-body">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header" id="headingThree">
+      <h5 class="mb-0">
+        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          La web és gratuita?
+        </button>
+      </h5>
+    </div>
+      
+    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+      <div class="card-body">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+      </div>
+    </div>
+  </div>
+              
+  <div class="card">
+    <div class="card-header" id="headingThree">
+      <h5 class="mb-0">
+        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          Qui contracte a el/la cangur?
+        </button>
+      </h5>
+    </div>
+      <div id="collapseFour" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+      <div class="card-body">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+         </div>
+       </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+
         
- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent et pulvinar eros. Suspendisse vel lorem nec tellus sollicitudin fringilla. Aliquam in malesuada dui. Donec sit amet mi at magna congue bibendum. Integer gravida mollis felis tristique faucibus. Aenean venenatis dignissim rutrum. Fusce faucibus pretium commodo. Pellentesque pharetra risus sed velit vehicula, pellentesque ullamcorper urna imperdiet. Mauris faucibus ultrices urna quis porta.
-
-Aliquam erat volutpat. Curabitur consequat malesuada ultricies. Curabitur vel mi in sem porta luctus. Nullam tempus malesuada nulla, quis tincidunt ligula lacinia non. Fusce at ligula quis ex ornare convallis. Vivamus a purus a enim scelerisque scelerisque. Nullam fringilla gravida velit consectetur interdum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aliquam ut ex enim. Duis mattis orci placerat ante facilisis scelerisque. Sed eu aliquam nisi, a vestibulum ligula. Fusce aliquet finibus sem nec finibus.
-
-Morbi ullamcorper semper ante a ornare. Pellentesque iaculis neque et arcu lobortis, ut mollis lacus ultricies. Morbi pellentesque, eros id euismod accumsan, sapien justo bibendum mauris, et laoreet ipsum ex vel sapien. Curabitur quis nulla id augue tempor eleifend at quis tellus. Ut quis quam vitae ante elementum sollicitudin. Maecenas feugiat urna eu gravida viverra. In aliquam nisi facilisis mi condimentum, in tincidunt tellus porttitor. Sed eget justo mi. Sed aliquam iaculis tempor. Sed ac eros venenatis est consectetur ullamcorper. Nam maximus ex at felis bibendum pellentesque. Aenean nec sem ex. Mauris condimentum efficitur sagittis. Donec rhoncus sollicitudin iaculis. Aenean risus turpis, scelerisque in vulputate ut, accumsan sed orci. Nam molestie nec neque ut laoreet.
-
-In ac condimentum neque. Morbi in nulla lacinia augue maximus mattis id id dui. Ut commodo ligula leo, eget porta tortor venenatis at. Sed at nisi pharetra nisi posuere placerat. Donec et lacus sem. Aliquam turpis nibh, iaculis sit amet dictum in, aliquet eget ex. Sed at tortor eu risus blandit venenatis vel vitae ex. Aliquam at turpis viverra, varius ex vel, commodo mauris. Suspendisse enim sapien, egestas nec tristique eu, scelerisque sit amet nunc. Integer lacinia eros ac scelerisque bibendum. Suspendisse iaculis turpis lobortis mi tristique elementum. Sed mauris mauris, dapibus sed aliquet non, aliquam at orci. Donec elementum egestas turpis sed pretium. Aliquam interdum leo neque, sit amet dignissim metus vehicula in. Praesent iaculis ipsum vitae eros porttitor mollis. Sed in tincidunt sem, quis malesuada ex.
-
-Aliquam at feugiat felis. Sed et ante lacus. Donec pulvinar porta tortor, quis sollicitudin arcu faucibus sit amet. Sed in risus nec velit volutpat maximus. Maecenas et fermentum ipsum, a venenatis nisi. Vestibulum imperdiet tortor a luctus lacinia. Cras aliquam erat ut ex porttitor, quis dignissim lacus placerat. Donec posuere a lectus molestie vestibulum. Donec ac purus ac elit mattis placerat id commodo ante. Nulla facilisi. Cras imperdiet feugiat purus eu suscipit. Nam imperdiet bibendum euismod. Nam porta sit amet neque id maximus. In ornare viverra arcu quis pellentesque. Nullam at commodo leo, vitae dignissim nibh.
-
-Quisque neque purus, laoreet eu purus non, auctor ultricies sapien. Sed diam nibh, molestie quis scelerisque a, accumsan eget est. Pellentesque nec dui dolor. Aenean convallis eros in felis imperdiet, in dignissim urna ornare. Aliquam a lacinia enim. Phasellus massa mauris, finibus quis magna sit amet, auctor pulvinar felis. Phasellus dictum velit sed vestibulum interdum. Cras a sapien arcu. Nulla quam erat, aliquam eget elit at, viverra sagittis risus. Suspendisse id tristique ante, id rutrum orci.
-
-Curabitur egestas tempor gravida. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed at lacus ultrices, hendrerit erat eget, tincidunt dui. Nam tristique sem nisl, non laoreet lorem accumsan ac. Vivamus euismod nisl vitae mi porta dignissim vitae vitae nisi. Praesent eros neque, aliquet sit amet elementum eu, fermentum semper eros. Aenean in dictum lorem. Maecenas facilisis nibh enim, ut mollis purus fermentum eget. Sed tellus nisi, feugiat sit amet aliquam sed, sodales quis nisl. Nam malesuada nunc a felis vestibulum, nec gravida risus maximus. Sed sagittis elementum est finibus efficitur.
-
-Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed hendrerit tortor quis eros interdum, sed laoreet augue faucibus. Etiam leo massa, ornare et auctor ac, fringilla at orci. Nullam fermentum feugiat ante nec rutrum. Quisque scelerisque consequat mi pulvinar sodales. Fusce molestie dapibus arcu, non ultrices arcu rutrum ac. Nunc tristique elementum mauris id tempor. Sed vestibulum nunc nec erat lobortis, eget posuere arcu congue.
-
-Curabitur tellus nunc, ultricies eu odio id, convallis ultrices odio. Quisque aliquam sem vel nibh congue posuere. Proin sed libero sit amet ante blandit aliquet. Vivamus at turpis eget odio vehicula bibendum in lobortis lacus. Nunc vitae augue feugiat, sollicitudin libero non, tempor neque. Duis porttitor tincidunt dolor, ac tristique ipsum lobortis vel. Curabitur maximus lacus eu nunc porttitor finibus.
-
-Vestibulum tincidunt urna turpis. Ut non mattis lacus, ut egestas dui. Cras congue aliquet luctus. Praesent et elit sed diam aliquet iaculis ut id leo. Phasellus convallis vel augue ac pulvinar. Aenean ultricies, tellus sit amet imperdiet convallis, felis felis sollicitudin ipsum, sit amet eleifend lectus urna sit amet erat. Praesent et est sit amet leo ultricies ultricies. Curabitur lacinia libero quis velit placerat mattis. Donec lobortis condimentum tortor sagittis tincidunt.
+        
+        <p>t non mattis lacus, ut egestas dui. Cras congue aliquet luctus. Praesent et elit sed diam aliquet iaculis ut id leo. Phasellus convallis vel augue ac pulvinar. Aenean ultricies, tellus sit amet imperdiet convallis, felis felis sollicitudin ipsum, sit amet eleifend lectus urna sit amet erat. Praesent et est sit amet leo ultricies ultricies. Curabitur lacinia libero quis velit placerat mattis. Donec lobortis condimentum tortor sagittis tincidunt.
 
 Quisque in nisi mauris. Maecenas iaculis rutrum posuere. Curabitur egestas sollicitudin orci non gravida. Praesent luctus leo mauris, sit amet posuere massa vehicula eget. Nunc varius, arcu vitae rutrum pretium, ante sem laoreet risus, et aliquam nibh lorem non velit. Maecenas elementum interdum mauris et bibendum. Vestibulum sit amet vehicula lacus, ut mollis massa. Sed sit amet orci porttitor lectus mollis fringilla. Ut eleifend porttitor consectetur.
 
 Etiam volutpat viverra urna quis tempor. Nunc sit amet facilisis odio. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi at ante nulla. Mauris porta ultricies nisl. Ut rutrum congue nisi, ac sagittis dolor euismod quis. Nulla molestie velit sit amet nibh ornare tincidunt ac at neque. Proin imperdiet dapibus enim, quis laoreet purus laoreet eget. Vivamus consectetur sapien et scelerisque feugiat. Curabitur eget iaculis nisl. Duis ut libero id enim molestie egestas. Phasellus a mattis ante. Pellentesque habitant.</p>
-         
- 
+
 @stop

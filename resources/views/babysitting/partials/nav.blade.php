@@ -16,7 +16,7 @@ and open the template in the editor.
 <p class="navbar-text">Benvinguts a Babysitting</p>
 
 
-  <div class="collapse navbar-collapse" id="navbarColor01">
+<div class="collapse navbar-collapse" id="navbarColor01"> <!--d-flex justify-content-center align-item-between-->
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
         <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
@@ -36,10 +36,6 @@ and open the template in the editor.
       <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
     </form>
   </div>
-
-Refresquem la  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation" style="">
-    <span class="navbar-toggler-icon"></span>
-  </button>
 
 </nav> 
         

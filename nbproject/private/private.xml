@@ -7,8 +7,9 @@
             <file>file:/C:/xampp/htdocs/Projecte/database/migrations/2014_10_12_100000_create_password_resets_table.php</file>
             <file>file:/C:/xampp/htdocs/Projecte/public/index.php</file>
             <file>file:/C:/xampp/htdocs/Projecte/database/migrations/2018_05_17_153254_create_cangurs_table.php</file>
-            <file>file:/C:/xampp/htdocs/Projecte/resources/views/babysitting/partials/nav.blade</file>
+            <file>file:/C:/xampp/htdocs/Projecte/resources/views/babysitting/partials/footer.blade.php</file>
             <file>file:/C:/xampp/htdocs/Projecte/resources/views/babysitting/template.blade.php</file>
+            <file>file:/C:/xampp/htdocs/Projecte/resources/views/babysitting/partials/nav.blade.php</file>
             <file>file:/C:/xampp/htdocs/Projecte/database/migrations/2018_05_17_153549_create_registres_table.php</file>
             <file>file:/C:/xampp/htdocs/Projecte/.env</file>
             <file>file:/C:/xampp/htdocs/Projecte/database/migrations/2014_10_12_000000_create_users_table.php</file>
@@ -17,7 +18,6 @@
             <file>file:/C:/xampp/htdocs/Projecte/routes/web.php</file>
             <file>file:/C:/xampp/htdocs/Projecte/bootstrap/app.php</file>
             <file>file:/C:/xampp/htdocs/Projecte/resources/views/welcome.blade.php</file>
-            <file>file:/C:/xampp/htdocs/Projecte/resources/views/babysitting/partials/footer.blade</file>
             <file>file:/C:/xampp/htdocs/Projecte/resources/views/babysitting/index.blade.php</file>
         </group>
     </open-files>
