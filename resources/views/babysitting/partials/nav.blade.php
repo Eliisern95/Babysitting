@@ -4,43 +4,21 @@ To change this license header, choose License Headers in Project Properties.
 To change this template file, choose Tools | Templates
 and open the template in the editor.
 -->
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <title></title>
-    </head>
-    <body>
      <!--Font que m'he baixat per la barra de navegació: spacelab-->   
-  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  <nav class="navbar navbar-expand-lg navbar-dark">
           <img src="{{asset('imatges/xumet.jpg')}}" width="100px" height="100px">
-<p class="navbar-text">Benvinguts a Babysitting</p>
+    <p class="text-center col-lg-9" id="titol_inici">Benvinguts a Babysitting</p>
+    <!--<a class="text-center col-lg-10">Llista de cangurs</a>-->
 
 
 <div class="collapse navbar-collapse" id="navbarColor01"> <!--d-flex justify-content-center align-item-between-->
     <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      <li class="nav-item1 py-1">
+        <button type="button" class="btn btn-outline-success">Registre't</button>  
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Features</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Pricing</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">About</a>
+      <li class="nav-item2 py-1">
+         <button type="button" class="btn btn-outline-warning">Entra</button>
       </li>
     </ul>
-    <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="text" placeholder="Search">
-      <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
-    </form>
   </div>
-
 </nav> 
-        
-        
-        
-       
-    </body>
-</html>

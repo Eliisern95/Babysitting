@@ -1,5 +1,5 @@
 <footer>
-    <div class="d-flex bg-dark">
+    <div class="d-flex">
         <div class="col-md-4 text-white">
             <h2>ELS NOSTRES ANUNCIS</h2>  
             <H5>
@@ -31,24 +31,27 @@
         </div>
 </div>
     
-    <div class="text-center bg-dark border-top text-white">
+    <div class="text-center border-top text-white">
             <h5>Segueixnos</h5>
-            <ul class="d-flex justify-content-center align-item-between">
+               <div id="icones">
+            
+            <ul class="d-flex justify-content-center align-item-between" id="icones">
                 <span>
-                    <a href="#"><i class="fa fa-facebook-square fa4x"></i></a>
-                    </span>
-                <span>
-                    <a href="#"><i class="fa fa-twitter-square fa4x"></i></a>
-                    </span>
-                <span>
-                    <a href="#"><i class="fa fa-google-plus-square fa4x"></i></a>
+                    <a href="#"><i class="fa fa-facebook-square fa-3x"></i></a>    
                 </span>
                 <span>
-                    <a href="#"><i class="fa fa-linked-insquare fa4x"></i></a>
-                    </span>
+                    <a href="#"><i class="fa fa-twitter-square fa-3x"></i></a>   
+                </span>
                 <span>
-                    <a href="#"><i class="fa fa-youtube-square fa4x"></i></a>
+                    <a href="#"><i class="fa fa-google-plus-square fa-3x"></i></a>
+                </span>
+                <span>
+                    <a href="#"><i class="fa fa-linked-insquare fa-3x"></i></a>    
+                </span>
+                <span>
+                    <a href="#"><i class="fa fa-youtube-square fa-3x"></i></a>
                 </span>    
             </ul>
-        </div>         
+        </div>  
+    </div>
 </footer>
