@@ -43,13 +43,10 @@
                     <a href="#"><i class="fa fa-twitter-square fa-3x"></i></a>   
                 </span>
                 <span>
-                    <a href="#"><i class="fa fa-google-plus-square fa-3x"></i></a>
-                </span>
-                <span>
                     <a href="#"><i class="fa fa-linked-insquare fa-3x"></i></a>    
                 </span>
                 <span>
-                    <a href="#"><i class="fa fa-youtube-square fa-3x"></i></a>
+                    <a href="#"><i class="fa fa-camera-retro fa-3x"></i></a>
                 </span>    
             </ul>
         </div>  
