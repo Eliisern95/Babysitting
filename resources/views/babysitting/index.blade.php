@@ -14,7 +14,7 @@
 
 
 <!--Afecta card-->
-<div class="d-flex p-3">
+<div class="d-flex p-4">
     <div class="col-sm-4">
         <div class="card bg-info text-white text-center">
             <div class="card-body"><!--Posar icono de rellotge-->
