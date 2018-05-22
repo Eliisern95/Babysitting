@@ -13,15 +13,15 @@
 
                         <div class="radios text-center">
                         <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="sex" value="option1">
-                            <label class="form-check-label col-form-label" for="inlineRadio1">Home</label>
+                            <input class="form-check-input" type="radio" name="sexe" id="sex1" value="option1">
+                            <label class="form-check-label col-form-label" for="sexe">Home</label>
                         </div>
                         <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="sex" value="option2">
-                            <label class="form-check-label col-form-label" for="inlineRadio2">Dona</label>
+                            <input class="form-check-input" type="radio" name="sexe" id="sex2" value="option2">
+                            <label class="form-check-label col-form-label" for="sexe">Dona</label>
                         </div>
                         <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="sex" value="option3">
+                            <input class="form-check-input" type="radio" name="sexe" id="sex3" value="option3">
                             <label class="form-check-label col-form-label" for="inlineRadio3">Altres</label>
                         </div>
                     </div>
@@ -77,6 +77,8 @@
                             <label for="password" class="col-md-4 col-form-label text-md-right">{{ __('Contrasenya') }}</label>
 
                             <div class="col-md-6">
+                                <!--Mirar si l'Span el pot posar al final del quadre de text-->
+                                <span class="fa fa-eye"></span>
                                 <input id="password" type="password" class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }}" name="password" required>
 
                                 @if ($errors->has('password'))

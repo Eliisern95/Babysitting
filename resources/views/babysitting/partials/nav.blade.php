@@ -32,15 +32,14 @@ and open the template in the editor.
         </ul>
     </div>
     @else
+    
     <div class="nav-item dropdown">
        <a class="btn btn-outline-primary dropdown-toggle dropdown-toggle-split btn-sm" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             {{ Auth::user()->name }} <span class="caret"></span>
         </a>
 
   <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-            <a class="dropdown-item" href="{{ route('logout') }}"
-               onclick="event.preventDefault();
-                       document.getElementById('logout-form').submit();">
+            <a class="dropdown-item" href="{{ route('logout') }}">
                 {{ __('Logout') }}
             </a>
 
