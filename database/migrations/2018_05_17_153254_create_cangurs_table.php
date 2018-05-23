@@ -18,10 +18,11 @@ class CreateCangursTable extends Migration
             $table->string('sexe');
             $table->string('nom');
             $table->string('cognom');
+            $table->string('direcció');
+            $table->integer('codiPostal')->unsigned();
             $table->integer('edat')->unsigned();
             $table->string('telefon');
             $table->string('correuelectronic');
-            $table->string('pais');
             $table->string('provincia');
             $table->string('poblacio');
 

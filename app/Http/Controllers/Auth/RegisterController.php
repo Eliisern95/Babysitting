@@ -3,6 +3,8 @@
 namespace App\Http\Controllers\Auth;
 
 use App\User;
+use App\Pares;
+use App\Cangurs;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
@@ -51,7 +53,7 @@ class RegisterController extends Controller
         return Validator::make($data, [
             'name' => 'required|string|max:255',
             'email' => 'required|string|email|max:255|unique:users',
-            'password' => 'required|string|min:10|confirmed',
+            'password' => 'required|string|min:6|confirmed',
         ]);
     }
 
@@ -68,5 +70,35 @@ class RegisterController extends Controller
             'email' => $data['email'],
             'password' => Hash::make($data['password']),
         ]);
+        
+        dd($data);
+        
+        return Pares::create([
+            'sex' => $data['Home'],
+            'name' => $data['nom'],
+            'surname' => $data['cognom'],
+            'direcction' => $data['direcció'],
+            'postalCode' => $data['codiPostal'],
+            'age' => $data['edat'],
+            'phonenumber' => $data['telefon'],
+            'email' => $data['correuelectronic'],
+            'password' => Hash::make($data['password']),
+  
+        ]); 
+        
+             return Cangurs::create([
+            'sex' => $data['Home'],
+            'name' => $data['nom'],
+            'surname' => $data['cognom'],
+            'direcction' => $data['direcció'],
+            'postalCode' => $data['codiPostal'],
+            'age' => $data['edat'],
+            'phonenumber' => $data['telefon'],
+            'email' => $data['correuelectronic'],
+            'password' => Hash::make($data['password']),
+  
+        ]); 
     }
+
+    
 }

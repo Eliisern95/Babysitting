@@ -158,13 +158,7 @@
         </div>
     </div>
 </div>
-  <!--Testimonis  
-    
-    <div class="p-6 bg-info col-md-6">
-        
-    </div>
--->
-
+ 
 <!--Cangurs-->
 <div class="d-flex p-3">
     <div class="col-md-6 col-md-offset-3">
@@ -265,7 +259,9 @@
                                 Visita el nostra <b>Cataleg e cangurs</b>!  
                             </div>
                         </div>
-                         <input class="btn btn-danger" type="submit" value="EM REGISTRO!">
+                           <button type="submit" class="btn btn-danger">
+                                    {{ __('EM REGISTRO!') }}
+                                </button>
                     </div>
                 </div>
             </div>
