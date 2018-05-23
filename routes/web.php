@@ -22,3 +22,7 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/logout',[
           'as'=>'logout',
           'uses'=>'Auth\LoginController@logout']);
+
+Route::get('/llista',[
+          'as'=>'llista-cangurs',
+          'uses'=>'WebController@index']);

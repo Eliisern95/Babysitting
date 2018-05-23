@@ -15,7 +15,7 @@
             
             <H5>
                SI TENS CAP DUBTE ADREÇAT A:
-               bet.isern@gmail.com
+               babysitting.usercare@gmail.com
             </H5>
         </div>
         

@@ -7,8 +7,9 @@ and open the template in the editor.
 <!--Font que m'he baixat per la barra de navegació: spacelab-->   
 <nav class="navbar navbar-expand-lg navbar-dark">
     <img src="{{asset('imatges/xumet.jpg')}}" width="100px" height="100px">
-    <!--  <button type="button" class="btn-primary col-mg-3">Llista de cangurs</button>-->
+    <a class="btn btn-outline-warning dropdown-toggle dropdown-toggle-split btn-sm" href="{{ route('llista-cangurs') }}"   aria-haspopup="true" aria-expanded="false">Llista de Cangurs</a>
     <p class="text-center col-lg-9" id="titol_inici">Benvinguts a Babysitting</p>
+    <!--Si es cangur -->
     <!--<a class="text-center col-lg-10">Llista de cangurs</a>-->
 
 

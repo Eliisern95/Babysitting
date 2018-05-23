@@ -12,20 +12,47 @@
                         @csrf
 
                         <div class="radios text-center">
-                        <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="sexe" id="sex1" value="option1">
-                            <label class="form-check-label col-form-label" for="sexe">Home</label>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="sexe" id="sex1" value="option1">
+                                <label class="form-check-label col-form-label" for="sexe">Home</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="sexe" id="sex2" value="option2">
+                                <label class="form-check-label col-form-label" for="sexe">Dona</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="sexe" id="sex3" value="option3">
+                                <label class="form-check-label col-form-label" for="inlineRadio3">Altres</label>
+                            </div>
                         </div>
-                        <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="sexe" id="sex2" value="option2">
-                            <label class="form-check-label col-form-label" for="sexe">Dona</label>
-                        </div>
-                        <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="sexe" id="sex3" value="option3">
-                            <label class="form-check-label col-form-label" for="inlineRadio3">Altres</label>
-                        </div>
-                    </div>
 
+                        <div class="form-group row">
+                            <label for="name" class="col-md-4 col-form-label text-md-right">{{ __('Nom') }}</label>
+
+                            <div class="col-md-6">
+                                <input id="name" type="text" class="form-control{{ $errors->has('name') ? ' is-invalid' : '' }}" name="name" value="{{ old('name') }}" required autofocus>
+
+                                @if ($errors->has('name'))
+                                <span class="invalid-feedback">
+                                    <strong>{{ $errors->first('name') }}</strong>
+                                </span>
+                                @endif
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <label for="surname" class="col-md-4 col-form-label text-md-right">{{ __('Cognom') }}</label>
+
+                            <div class="col-md-6">
+                                <input id="name" type="text" class="form-control{{ $errors->has('surname') ? ' is-invalid' : '' }}" name="surname" value="{{ old('surname') }}" required autofocus>
+
+                                @if ($errors->has('surname'))
+                                <span class="invalid-feedback">
+                                    <strong>{{ $errors->first('surname') }}</strong>
+                                </span>
+                                @endif
+                            </div>
+                        </div>
 
 
                         <div class="form-group row">
@@ -42,18 +69,43 @@
                             </div>
                         </div>
 
-
-
-
                         <div class="form-group row">
-                            <label for="name" class="col-md-4 col-form-label text-md-right">{{ __('Nom') }}</label>
+                            <label for="postalCode" class="col-md-4 col-form-label text-md-right">{{ __('Codi Postal') }}</label>
 
                             <div class="col-md-6">
-                                <input id="name" type="text" class="form-control{{ $errors->has('name') ? ' is-invalid' : '' }}" name="name" value="{{ old('name') }}" required autofocus>
+                                <input id="email" type="number" class="form-control{{ $errors->has('postalCode') ? ' is-invalid' : '' }}" name="codi postal" placeholder="" value="{{ old('postalCode') }}" required>
 
-                                @if ($errors->has('name'))
+                                @if ($errors->has('direction'))
                                 <span class="invalid-feedback">
-                                    <strong>{{ $errors->first('name') }}</strong>
+                                    <strong>{{ $errors->first('postalCode') }}</strong>
+                                </span>
+                                @endif
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <label for="poblacio" class="col-md-4 col-form-label text-md-right">{{ __('Població') }}</label>
+
+                            <div class="col-md-6">
+                                <input id="email" type="text" class="form-control{{ $errors->has('poblacio') ? ' is-invalid' : '' }}" name="poblacio" placeholder="població completa" value="{{ old('poblacio') }}" required>
+
+                                @if ($errors->has('direction'))
+                                <span class="invalid-feedback">
+                                    <strong>{{ $errors->first('poblacio') }}</strong>
+                                </span>
+                                @endif
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <label for="phone" class="col-md-4 col-form-label text-md-right">{{ __('Telefon') }}</label>
+
+                            <div class="col-md-6">
+                                <input id="email" type="text" class="form-control{{ $errors->has('phone') ? ' is-invalid' : '' }}" name="phone" placeholder="" value="{{ old('phone') }}" required>
+
+                                @if ($errors->has('direction'))
+                                <span class="invalid-feedback">
+                                    <strong>{{ $errors->first('phone') }}</strong>
                                 </span>
                                 @endif
                             </div>
@@ -78,8 +130,8 @@
 
                             <div class="col-md-6">
                                 <!--Mirar si l'Span el pot posar al final del quadre de text-->
-                                <span class="fa fa-eye"></span>
-                                <input id="password" type="password" class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }}" name="password" required>
+                                <span class="fa fa-eye pull-right"></span>
+                                <input id="password" type="password" class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }} fa fa-eye pull-right" name="password" required>
 
                                 @if ($errors->has('password'))
                                 <span class="invalid-feedback">
@@ -90,7 +142,7 @@
                         </div>
 
                         <div class="form-group row">
-                            <label for="password-confirm" class="col-md-4 col-form-label text-md-right">{{ __('Confrima Contrasenya') }}</label>
+                            <label for="password-confirm" class="col-md-4 col-form-label text-md-right">{{ __('Confirma Contrasenya') }}</label>
 
                             <div class="col-md-6">
                                 <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required>
@@ -102,8 +154,17 @@
                                 <button type="submit" class="btn btn-primary">
                                     {{ __('Registre') }}
                                 </button>
+                                    <div class="form-check form-check-inline p-2 m-4 py-5">
+                                        <input class="form-check-input" type="radio" name="pare" id="pare" value="option1">
+                                        <label class="form-check-label col-form-label" for="pare">Pare</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="pare" id="cangur" value="option2">
+                                        <label class="form-check-label col-form-label" for="pare">Cangur</label>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
+                        </div><!--Onclick se li obra un desplagable a on li digui si es pare o cangur-->
                     </form>
                 </div>
             </div>
