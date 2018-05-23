@@ -14,7 +14,7 @@ class Cangurs extends Model
      * @var array
      */
     protected $fillable = [
-        'name', 'email', 'password',
+        'sex','name', 'surname', 'direcction', 'postalCode','age', 'phone', 'email', 'password',
     ];
 
     /**

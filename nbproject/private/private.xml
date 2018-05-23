@@ -3,24 +3,24 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
+            <file>file:/C:/xampp/htdocs/Projecte/app/User.php</file>
             <file>file:/C:/xampp/htdocs/Projecte/database/migrations/2018_05_17_153133_create_pares_table.php</file>
+            <file>file:/C:/xampp/htdocs/Projecte/app/Pares.php</file>
             <file>file:/C:/xampp/htdocs/Projecte/database/migrations/2018_05_17_153254_create_cangurs_table.php</file>
             <file>file:/C:/xampp/htdocs/Projecte/app/Http/Controllers/Auth/RegisterController.php</file>
             <file>file:/C:/xampp/htdocs/Projecte/resources/views/auth/login.blade.php</file>
             <file>file:/C:/xampp/htdocs/Projecte/app/Registre.php</file>
             <file>file:/C:/xampp/htdocs/Projecte/resources/views/babysitting/partials/nav.blade.php</file>
-            <file>file:/C:/xampp/htdocs/Projecte/resources/views/layouts/app.blade.php</file>
             <file>file:/C:/xampp/htdocs/Projecte/database/migrations/2018_05_17_153549_create_registres_table.php</file>
-            <file>file:/C:/xampp/htdocs/Projecte/database/migrations/2014_10_12_000000_create_users_table.php</file>
-            <file>file:/C:/xampp/htdocs/Projecte/app/Http/Controllers/WebController.php</file>
             <file>file:/C:/xampp/htdocs/Projecte/resources/assets/js/app.js</file>
             <file>file:/C:/xampp/htdocs/Projecte/database/migrations/2018_05_17_153605_create_loggins_table.php</file>
             <file>file:/C:/xampp/htdocs/Projecte/app/Loggin.php</file>
             <file>file:/C:/xampp/htdocs/Projecte/routes/web.php</file>
             <file>file:/C:/xampp/htdocs/Projecte/app/Http/Controllers/Controller.php</file>
+            <file>file:/C:/xampp/htdocs/Projecte/app/Cangurs.php</file>
             <file>file:/C:/xampp/htdocs/Projecte/app/Http/Controllers/Auth/LoginController.php</file>
             <file>file:/C:/xampp/htdocs/Projecte/routes/console.php</file>
-            <file>file:/C:/xampp/htdocs/Projecte/app/Http/Controllers/HomeController.php</file>
+            <file>file:/C:/xampp/htdocs/Projecte/resources/views/babysitting/partials/cangurList.blade.php</file>
             <file>file:/C:/xampp/htdocs/Projecte/resources/views/auth/register.blade.php</file>
             <file>file:/C:/xampp/htdocs/Projecte/resources/views/home.blade.php</file>
             <file>file:/C:/xampp/htdocs/Projecte/resources/views/babysitting/index.blade.php</file>
