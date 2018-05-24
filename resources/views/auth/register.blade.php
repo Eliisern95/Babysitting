@@ -164,7 +164,7 @@
                                     </div>
                                 </div>
                             </div>
-                        </div><!--Onclick se li obra un desplagable a on li digui si es pare o cangur-->
+                        </div>
                     </form>
                 </div>
             </div>

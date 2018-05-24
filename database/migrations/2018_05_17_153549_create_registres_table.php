@@ -15,17 +15,17 @@ class CreateRegistresTable extends Migration
     {
         Schema::create('registres', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('sexe');
-            $table->string('nom');
-            $table->string('cognom');
-            $table->integer('edat')->unsigned();
-            $table->string('telefon');
-            $table->string('correuelectronic');
-            $table->string('pais');
-            $table->string('provincia');
-            $table->string('poblacio');
+            $table->string('sex');
+            $table->string('name');
+            $table->string('surname');
+            $table->string('direction');
+            $table->integer('postalcode')->unsigned();
+            $table->string('phone');
             $table->string('email');
-            $table->Integer('contrasenya');
+            $table->string('poblacio');
+            $table->string('password');
+            $table->rememberToken();
+            $table->timestamps();
             
             $table->timestamps();
         });
