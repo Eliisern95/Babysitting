@@ -2,9 +2,10 @@
 
 namespace App;
 
-use Illuminate\Database\Eloquent\Model;
+use Illuminate\Notifications\Notifiable;
+use Illuminate\Foundation\Auth\User as Authenticatable;
 
-class Pares extends Model
+class Pares extends Authenticatable
 {
 
     use Notifiable;
@@ -15,7 +16,7 @@ class Pares extends Model
      * @var array
      */
     protected $fillable = [
-        'name', 'email', 'password',
+        'sex','name', 'surname', 'direction', 'postalCode', 'poblacio', 'phone', 'email', 'password',
     ];
 
     /**

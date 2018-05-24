@@ -15,18 +15,18 @@ class CreateCangursTable extends Migration
     {
         Schema::create('cangurs', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('sexe');
-            $table->string('nom');
-            $table->string('cognom');
-            $table->string('direcció');
-            $table->integer('codiPostal')->unsigned();
-            $table->integer('edat')->unsigned();
-            $table->string('telefon');
-            $table->string('correuelectronic');
-            $table->string('provincia');
+            $table->string('sex');
+            $table->string('name');
+            $table->string('surname');
+            $table->string('direction');
+            $table->integer('postalcode')->unsigned();
+            $table->string('phone');
+            $table->string('email');
             $table->string('poblacio');
-
+            $table->string('password');
+            $table->rememberToken();
             $table->timestamps();
+
         });
     }
 

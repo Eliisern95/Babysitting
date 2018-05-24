@@ -13,16 +13,16 @@
 
                         <div class="radios text-center">
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="sexe" id="sex1" value="option1">
+                                <input class="form-check-input" type="radio" name="sexe" id="sex1" value="Home">
                                 <label class="form-check-label col-form-label" for="sexe">Home</label>
                             </div>
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="sexe" id="sex2" value="option2">
+                                <input class="form-check-input" type="radio" name="sexe" id="sex2" value="Dona">
                                 <label class="form-check-label col-form-label" for="sexe">Dona</label>
                             </div>
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="sexe" id="sex3" value="option3">
-                                <label class="form-check-label col-form-label" for="inlineRadio3">Altres</label>
+                                <input class="form-check-input" type="radio" name="sexe" id="sex3" value="Altres">
+                                <label class="form-check-label col-form-label" for="sexe">Altres</label>
                             </div>
                         </div>
 
@@ -59,7 +59,7 @@
                             <label for="direction" class="col-md-4 col-form-label text-md-right">{{ __('Direcció') }}</label>
 
                             <div class="col-md-6">
-                                <input id="email" type="text" class="form-control{{ $errors->has('direction') ? ' is-invalid' : '' }}" name="direction" placeholder="direcció completa" value="{{ old('direction') }}" required>
+                                <input id="direction" type="text" class="form-control{{ $errors->has('direction') ? ' is-invalid' : '' }}" name="direction" placeholder="direcció completa" value="{{ old('direction') }}" required>
 
                                 @if ($errors->has('direction'))
                                 <span class="invalid-feedback">
@@ -73,7 +73,7 @@
                             <label for="postalCode" class="col-md-4 col-form-label text-md-right">{{ __('Codi Postal') }}</label>
 
                             <div class="col-md-6">
-                                <input id="email" type="number" class="form-control{{ $errors->has('postalCode') ? ' is-invalid' : '' }}" name="codi postal" placeholder="" value="{{ old('postalCode') }}" required>
+                                <input id="postalcode" type="number" class="form-control{{ $errors->has('postalCode') ? ' is-invalid' : '' }}" name="codipostal" placeholder="" value="{{ old('postalCode') }}" required>
 
                                 @if ($errors->has('direction'))
                                 <span class="invalid-feedback">
@@ -87,7 +87,7 @@
                             <label for="poblacio" class="col-md-4 col-form-label text-md-right">{{ __('Població') }}</label>
 
                             <div class="col-md-6">
-                                <input id="email" type="text" class="form-control{{ $errors->has('poblacio') ? ' is-invalid' : '' }}" name="poblacio" placeholder="població completa" value="{{ old('poblacio') }}" required>
+                                <input id="poblacio" type="text" class="form-control{{ $errors->has('poblacio') ? ' is-invalid' : '' }}" name="poblacio" placeholder="població completa" value="{{ old('poblacio') }}" required>
 
                                 @if ($errors->has('direction'))
                                 <span class="invalid-feedback">
@@ -155,12 +155,12 @@
                                     {{ __('Registre') }}
                                 </button>
                                     <div class="form-check form-check-inline p-2 m-4 py-5">
-                                        <input class="form-check-input" type="radio" name="pare" id="pare" value="option1">
+                                        <input class="form-check-input" type="radio" name="parecangur" id="pare" value="pare">
                                         <label class="form-check-label col-form-label" for="pare">Pare</label>
                                     </div>
                                     <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" name="pare" id="cangur" value="option2">
-                                        <label class="form-check-label col-form-label" for="pare">Cangur</label>
+                                        <input class="form-check-input" type="radio" name="parecangur" id="cangur" value="cangur">
+                                        <label class="form-check-label col-form-label" for="cangur">Cangur</label>
                                     </div>
                                 </div>
                             </div>

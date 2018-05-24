@@ -65,40 +65,38 @@ class RegisterController extends Controller
      */
     protected function create(array $data)
     {
-     dd($data);
-        return User::create([
+     /*   return User::create([
             'name' => $data['name'],
             'email' => $data['email'],
             'password' => Hash::make($data['password']),
-        ]);
+        ]);*/     
+     if($data ['parecangur'] == 'pare') {
+         return Pares::create([
+            'sex' => $data['sexe'],
+            'name' => $data['name'],
+            'surname' => $data['surname'],
+            'direction' => $data['direction'],
+            'postalCode' => $data['codipostal'],
+            'poblacio' => $data['poblacio'],
+            'phone' => $data['phone'],
+            'email' => $data['email'],
+            'password' => Hash::make($data['password'])
+             ]);
+     }else{
+           return Cangurs::create([
+            'sex' => $data['sexe'],
+            'name' => $data['name'],
+            'surname' => $data['surname'],
+            'direction' => $data['direction'],
+            'postalCode' => $data['codipostal'],
+            'poblacio' => $data['poblacio'],
+            'phone' => $data['phone'],
+            'email' => $data['email'],
+            'password' => Hash::make($data['password'])
+       ]);
+     }
+      
         
-        
-        return Pares::create([
-            'sex' => $data['Home'],
-            'name' => $data['nom'],
-            'surname' => $data['cognom'],
-            'direcction' => $data['direcció'],
-            'postalCode' => $data['codiPostal'],
-            'age' => $data['edat'],
-            'phonenumber' => $data['telefon'],
-            'email' => $data['correuelectronic'],
-            'password' => Hash::make($data['password']),
-  
-        ]); 
-        
-             return Cangurs::create([
-            'sex' => $data['Home'],
-            'name' => $data['nom'],
-            'surname' => $data['cognom'],
-            'direcction' => $data['direcció'],
-            'postalCode' => $data['codiPostal'],
-            'age' => $data['edat'],
-            'phonenumber' => $data['telefon'],
-            'email' => $data['correuelectronic'],
-            'password' => Hash::make($data['password']),
-  
-        ]); 
+      
     }
-
-    
 }
