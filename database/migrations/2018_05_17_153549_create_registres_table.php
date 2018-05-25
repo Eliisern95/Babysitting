@@ -25,7 +25,7 @@ class CreateRegistresTable extends Migration
             $table->string('poblacio');
             $table->string('password');
             $table->rememberToken();
-            $table->timestamps();
+
             
             $table->timestamps();
         });

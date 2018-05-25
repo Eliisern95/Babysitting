@@ -23,6 +23,6 @@ Route::get('/logout',[
           'as'=>'logout',
           'uses'=>'Auth\LoginController@logout']);
 
-Route::get('/llista',[
-          'as'=>'llista-cangurs',
-          'uses'=>'WebController@index']);
+Route::get('partials/pareocangur', 'WebController@index')->name('pareocangur');
+
+
