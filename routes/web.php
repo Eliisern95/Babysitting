@@ -23,6 +23,8 @@ Route::get('/logout',[
           'as'=>'logout',
           'uses'=>'Auth\LoginController@logout']);
 
-Route::get('partials/pareocangur', 'WebController@index')->name('pareocangur');
+Route::get('/pareocangur',[
+    'as'=>'pareocangur',
+    'uses'=>'WebController@pareocangur']);
 
 

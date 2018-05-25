@@ -81,4 +81,9 @@ class WebController extends Controller
     {
         //
     }
+    
+    public function pareocangur(){
+        
+        return view ("babysitting.pareocangur");
+    }
 }

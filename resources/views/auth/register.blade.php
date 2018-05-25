@@ -154,14 +154,7 @@
                                 <button type="submit" class="btn btn-primary">
                                     {{ __('Registre') }}
                                 </button>
-                                    <div class="form-check form-check-inline p-2 m-4 py-5">
-                                        <input class="form-check-input" type="radio" name="parecangur" id="pare" value="pare">
-                                        <label class="form-check-label col-form-label" for="pare">Pare</label>
-                                    </div>
-                                    <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" name="parecangur" id="cangur" value="cangur">
-                                        <label class="form-check-label col-form-label" for="cangur">Cangur</label>
-                                    </div>
+                                 
                                 </div>
                             </div>
                         </div>
