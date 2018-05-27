@@ -69,7 +69,9 @@ class RegisterController extends Controller
             'name' => $data['name'],
             'email' => $data['email'],
             'password' => Hash::make($data['password']),
-        ]);*/     
+        ]);*/  
+        
+        
      if($data ['parecangur'] == 'pare') {
          return Pares::create([
             'sex' => $data['sexe'],
