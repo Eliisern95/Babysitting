@@ -28,3 +28,18 @@ Route::get('/parecangur',[
     'uses'=>'WebController@parecangur']);
 
 
+Route::get('/pares/frontendpares',[   
+    'as'=>'frontendpares',      
+    'uses'=>'WebController@frontendpares']); 
+
+Route::get('/cangurs/frontendcangur',[   
+    'as'=>'frontendcangur',      
+    'uses'=>'CangurController@frontendcangur']); 
+
+
+
+
+
+Route::get('/cangurs/anunciscangurs',[   
+    'as'=>'anuncis-cangurs',      
+    'uses'=>'CangurController@index']); 

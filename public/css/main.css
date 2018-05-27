@@ -25,3 +25,12 @@ nav{
     text-size: 200%;
     color: #AE8D9B;
 }
+
+#titol_inici_pares{
+    font-family: Noto Sans;
+    font-size: 200%;    
+}
+
+#nav-cangur{
+    background: #e65100;
+}
