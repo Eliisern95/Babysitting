@@ -38,8 +38,6 @@ Route::get('/cangurs/frontendcangur',[
 
 
 
-
-
 Route::get('/cangurs/anunciscangurs',[   
     'as'=>'anuncis-cangurs',      
     'uses'=>'CangurController@index']); 

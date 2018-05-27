@@ -1,4 +1,4 @@
-<footer>
+<footer id="footer-cangur">
     <div class="d-flex">
         <div class="col-md-4 text-white">
             <h2>ELS NOSTRES ANUNCIS</h2>  

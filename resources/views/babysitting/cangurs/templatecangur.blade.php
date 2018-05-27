@@ -19,9 +19,9 @@
     
     </head>
     <body>
-         @include ('babysitting.pares.navpare')
+         @include ('babysitting.cangurs.navcangur')
          @yield ('content')
-         @include ('babysitting.pares.footerpare')
+         @include ('babysitting.cangurs.footercangur')
      
         
         

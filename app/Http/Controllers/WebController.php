@@ -92,4 +92,7 @@ class WebController extends Controller
         return view ("babysitting.pares.frontendpares");
     }
     
+
+  
 }
+

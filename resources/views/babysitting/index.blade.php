@@ -1,6 +1,9 @@
 @extends ('babysitting.template')
 @section ('content')
 
+
+
+
 <!--Cos-->
 
 <table>

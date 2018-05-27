@@ -32,5 +32,22 @@ nav{
 }
 
 #nav-cangur{
-    background: #e65100;
+    background: #f57c00;
+}
+
+#footer-cangur{
+        background: #f57c00;
+}
+
+#titol_inici_cangur{
+    font-family: MV Boli;
+    font-size: 200%;    
+}
+
+#boto1{
+    background: #ffb74d;
+}
+
+#boto2{
+    background: #ffcc80;
 }

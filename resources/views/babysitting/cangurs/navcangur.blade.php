@@ -6,9 +6,9 @@ and open the template in the editor.
 -->
 <!--Font que m'he baixat per la barra de navegació: spacelab-->   
 <nav class="navbar navbar-expand-lg navbar-dark" id="nav-cangur">
-    <img src="{{asset('imatges/xumet.jpg')}}" width="100px" height="100px">
-    <p class="text-center col-lg-9" id="titol_inici">Benvinguts a Babysitting</p>
-    <!--Si es cangur -->
+    <img src="{{asset('imatges/kangaroo_1.png')}}" width="100px" height="100px">
+    <p class="text-center col-lg-9" id="titol_inici_cangur">Benvingut a Babysitting Cangur!</p>
+   
 
 
     @guest
