@@ -5,24 +5,160 @@
 
 
 <!--cos-->
-<button type="button" class="btn btn-primary btn-lg btn-block" ><a class='text-light' href="{{ route('anuncis-cangurs') }}">Llistat de cangurs</a></button>
+<button type="button" class="btn btn-primary btn-lg btn-block" ><a class='text-light' href="{{ route('anuncis-cangurs') }}">Llistat de cangurs!</a></button>
+
+<button type="button" class="btn btn-info btn-lg btn-block" ><a class='text-light' href="{{ route('anuncis-cangurs') }}">Els meus cangurs preferits!</a></button>
 
 
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin at leo odio. Nulla id convallis dui. Integer at sem massa. Phasellus ultricies purus consectetur felis sagittis, eget condimentum urna dictum. Proin imperdiet mauris et lorem pharetra venenatis. Pellentesque at lobortis nisi. Pellentesque nibh dolor, tristique at turpis et, bibendum sollicitudin arcu. In sed est ipsum. Integer vulputate faucibus dolor, et suscipit purus placerat in. Suspendisse ornare metus eget odio ornare, ac hendrerit libero vestibulum. Nulla facilisi. Mauris metus metus, lacinia ut finibus nec, pulvinar non orci. Donec pulvinar velit in justo commodo, eu sagittis augue cursus. Suspendisse mollis purus vitae finibus sagittis. Donec sit amet dui commodo, congue odio tincidunt, feugiat neque. In hac habitasse platea dictumst.
+ <div style="float:left;width:300px;"></div>
+ <img src="{{asset('imatges/happy-family.jpg')}}" width="1347px" height="500px">
 
-Proin arcu ex, sodales et neque a, lobortis condimentum arcu. Pellentesque blandit luctus eros, maximus congue sem varius ac. Mauris dignissim dictum porttitor. Maecenas dignissim venenatis massa, at lacinia purus placerat nec. Proin quis maximus nisl, id vulputate enim. Nulla facilisi. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Pellentesque malesuada nisl eget semper condimentum. Aenean fermentum maximus justo, et sodales mauris porta in. Vivamus mattis elit vitae turpis tincidunt placerat. Praesent a rhoncus metus.
+ 
+<!--
+<div class="container">
+<br>  <p class="text-center">More bootstrap 4 components on <a href="http://bootstrap-ecommerce.com/"> Bootstrap-ecommerce.com</a></p>
+<hr>
 
-Ut porttitor massa enim. Cras efficitur elit et leo mollis, sed venenatis risus pulvinar. Sed non dapibus dolor. Maecenas at consectetur mi. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Quisque consectetur in nulla non cursus. Maecenas pellentesque ante eget est varius mollis. Etiam egestas metus varius orci tincidunt, vitae pellentesque nisl pharetra. Nunc sollicitudin tellus vitae orci rutrum, a cursus lacus elementum. Donec efficitur dignissim ullamcorper. Vestibulum eget nisi neque. Morbi blandit imperdiet posuere. Mauris sit amet tortor eleifend, viverra risus eu, imperdiet massa.
-
-Vestibulum et lacus eu turpis eleifend eleifend a nec enim. Duis consequat nisi vel justo vehicula, vel posuere velit lacinia. Curabitur eget cursus risus. Curabitur eu eleifend est. Sed scelerisque condimentum risus. Proin diam lectus, rutrum in tortor sit amet, pretium pharetra ligula. In sit amet porttitor nulla. Donec hendrerit non tortor a varius.
-
-Nullam ligula erat, cursus id mauris nec, tempor ultrices nibh. Donec molestie quam malesuada, congue arcu et, laoreet justo. Phasellus condimentum felis in varius pharetra. Curabitur accumsan nibh sed lacus elementum, id suscipit felis pellentesque. Vivamus ut velit vel libero pellentesque convallis in ut est. Vestibulum posuere turpis nec luctus ultricies. Maecenas quam orci, venenatis et rhoncus sed, mollis sed velit. Curabitur aliquam vitae nunc ut vulputate. Curabitur dictum, tortor id lacinia suscipit, tortor justo dictum urna, in dictum purus quam sed nibh. Cras vitae diam lacinia, mattis leo vitae, ornare diam. Nunc luctus mollis euismod. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur est mi, porta in augue nec, condimentum imperdiet mauris. Morbi purus lacus, molestie a ullamcorper sed, placerat et magna. Nam a tellus non velit pharetra ornare vel non augue.</p>
-
-
-
-
-
+<div class="row">
+	<aside class="col-sm-4">
+<p>Collapse - list group</p>
 
 
+<div class="list-group filter-wrap">
+	<article class="list-group-item">
+		<header class="filter-header">
+			<a href="#" data-toggle="collapse" data-target="#collapse1" aria-expanded="true" class="">
+				<i class="icon-action fa fa-chevron-down"></i>
+				<h6 class="title">Some heading </h6>
+			</a>
+		</header>
+		<div class="filter-content collapse show" id="collapse1" style="">			
+			<form class="py-2">
+			<div class="input-group">
+			  <input type="text" class="form-control" placeholder="Search">
+			  <div class="input-group-append">
+			    <button class="btn btn-primary" type="button"><i class="fa fa-search"></i></button>
+			  </div>
+			</div>
+			</form>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt deserunt mollit anim id est laborum.	</p>
+		</div> <!-- collapse -filter-content  .// 
+	</article>
+	<article class="list-group-item">
+		<header class="filter-header">
+			<a href="#" data-toggle="collapse" data-target="#collapse2">
+				<i class="icon-action fa fa-chevron-down"></i>
+				<h6 class="title">Second heading </h6>
+			</a>
+		</header>
+		<div class="filter-content collapse show" id="collapse2">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt deserunt mollit anim id est laborum.	</p>
+		</div>
+	</article>
+	<article class="list-group-item">
+		<header class="filter-header">
+			<a href="#" data-toggle="collapse" data-target="#collapse3">
+				<i class="icon-action fa fa-chevron-down"></i>
+				<h6 class="title">Another title </h6>
+			</a>
+		</header>
+		<div class="filter-content collapse" id="collapse3">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt deserunt mollit anim id est laborum.	</p>
+		</div>
+	</article>
+</div> <!-- card.//
 
+
+
+
+	</aside>  col -->
+
+ 
+
+
+
+
+
+
+ 
+ 
+ <div class="card text-center">
+  <div class="card-header">
+    CONSELLS
+  </div>
+  <div class="card-body">
+    <h5 class="card-title">Consells de com educar els teus fills</h5>
+    <p class="card-text1" id="rotando"></p>
+    <a href="#" class="btn btn-primary">Consells de nannys!</a>
+  </div>
+  <div class="card-footer text-muted" id="rotando1" id="radio5">
+  </div> 
+</div> 
+
+ <!--Script de rotació de missatges-->
+<script type="text/javascript">
+var indice = 0;
+frases = new Array();
+frases[0] = "Educa-ls bé";
+frases[1] = "Alimenta-ls bé";
+frases[2] = "Estimal's";
+frases[3] = "Fes que fasin esport";
+frases[4] = "Fes que llegeixin molt";
+
+
+indice = Math.random()*(frases.length);
+indice = Math.floor(indice);
+
+function rotar() {
+if (indice == frases.length) {indice = 0;}
+document.getElementById("rotando").innerHTML = frases[indice];
+indice++;
+setTimeout("rotar();",4000);
+}
+</script>
+<div id="rotando" style="height:60px;margin:0px auto;"></div>
+<script type="text/javascript">rotar();</script>
+
+<script type="text/javascript">
+var indice1 = 0;
+hora = new Array();
+hora[0] = "2 segons abans";
+hora[1] = "3 hores abans";
+hora[2] = "24 hores abans";
+hora[3] = "11/06/18";
+hora[4] = "48 hores abans";
+
+
+indice1 = Math.random()*(hora.length);
+indice1 = Math.floor(indice1);
+
+function rotando1() {
+if (indice1 == hora.length) {indice1 = 0;}
+document.getElementById("rotando1").innerHTML = hora[indice1];
+indice1++;
+setTimeout("rotando1();",4000);
+}
+</script>
+<div id="rotando" style="height:60px;margin:0px auto;"></div>
+<script type="text/javascript">rotando1();</script>
+
+
+<!--Valoracions-->
+<form>
+  <p class="clasificacion" id="calificacio">
+    <input id="radio1" type="radio" name="estrellas" value="5"><!--
+    --><label for="radio1">★</label><!--
+    --><input id="radio2" type="radio" name="estrellas" value="4"><!--
+    --><label for="radio2">★</label><!--
+    --><input id="radio3" type="radio" name="estrellas" value="3"><!--
+    --><label for="radio3">★</label><!--
+    --><input id="radio4" type="radio" name="estrellas" value="2"><!--
+    --><label for="radio4">★</label><!--
+    --><input id="radio5" type="radio" name="estrellas" value="1"><!--
+    --><label for="radio5">★</label>
+  </p>
+</form>
 @stop
