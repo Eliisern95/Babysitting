@@ -9,10 +9,10 @@
 <button type="button" id="boto2" class="btn btn-primary btn-lg btn-block" ><a class='text-light' href="{{ route('anuncis-cangurs') }}">OFERTES!</a></button>
 
 <div style="float:left;width:300px;"></div>
- <img src="{{asset('imatges/happy-family.jpg')}}" width="1347px" height="500px">
+ <img src="{{asset('imatges/nanny.jpg')}}" width="1347px" height="500px">
 
 
- <div class="card text-center">
+ <div class="card text-center p-3 py-4">
   <div class="card-header">
     CONSELLS
   </div>

@@ -14,7 +14,11 @@ class CangurController extends Controller
         return view ("babysitting.cangurs.frontendcangur");
     }
     
+       public function backendcangur(){
+        return view ("babysitting.cangurs.backend.backendcangur");
+    }
     
+      
     
     
 }

@@ -6,7 +6,6 @@
         <div class="col-md-8">
             <div class="card">
                 <div class="card-header">{{ __('Registre') }}</div>
-
                 <div class="card-body">
                     <form method="POST" action="{{ route('register') }}">
                         @csrf
@@ -160,34 +159,22 @@
                                             <input type="radio" aria-label="" name="parecangur" id="pare" value="pare">
                                             <label class="form-check-label col-form-label" for="pare">Ets pare? Aquí!</label>
                                         </div>
-                                     </div>
-                                    <input type="text" class="form-control" aria-label="Text input with radio button" disable>
-                                      <div class="input-group-prepend">
+                                    </div>
+                                    <div class="input-group-prepend">
                                         <div class="input-group-text">
                                             <input type="radio" aria-label="" name="parecangur" id="cangur" value="cangur">
                                             <label class="form-check-label col-form-label" for="cangur">Ets cangur? Aquí!</label>
                                         </div>
-                                     </div>
-                                    <input type="text" class="form-control" aria-label="Text input with radio button" disable>
-                              </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                     </div>
-                  </div>
                 </div>
-              </div>
-             </div>
-           </form>          
-
-    
+            </div>
+        </div>
+    </div>
+</div>
+</form>
 @endsection
 
 
-   <!--    <div class="form-check form-check-inline p-2 m-4 py-5">
-                                    <input class="form-check-input" type="radio" name="parecangur" id="pare" value="pare">
-                                    <label class="form-check-label col-form-label" for="pare">Pare</label>
-                                </div>
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="parecangur" id="cangur" value="cangur">
-                                    <label class="form-check-label col-form-label" for="cangur">Cangur</label>
-                                </div> -->

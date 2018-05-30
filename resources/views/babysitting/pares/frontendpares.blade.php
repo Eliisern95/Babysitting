@@ -14,78 +14,8 @@
  <img src="{{asset('imatges/happy-family.jpg')}}" width="1347px" height="500px">
 
  
-<!--
-<div class="container">
-<br>  <p class="text-center">More bootstrap 4 components on <a href="http://bootstrap-ecommerce.com/"> Bootstrap-ecommerce.com</a></p>
-<hr>
 
-<div class="row">
-	<aside class="col-sm-4">
-<p>Collapse - list group</p>
-
-
-<div class="list-group filter-wrap">
-	<article class="list-group-item">
-		<header class="filter-header">
-			<a href="#" data-toggle="collapse" data-target="#collapse1" aria-expanded="true" class="">
-				<i class="icon-action fa fa-chevron-down"></i>
-				<h6 class="title">Some heading </h6>
-			</a>
-		</header>
-		<div class="filter-content collapse show" id="collapse1" style="">			
-			<form class="py-2">
-			<div class="input-group">
-			  <input type="text" class="form-control" placeholder="Search">
-			  <div class="input-group-append">
-			    <button class="btn btn-primary" type="button"><i class="fa fa-search"></i></button>
-			  </div>
-			</div>
-			</form>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			tempor incididunt deserunt mollit anim id est laborum.	</p>
-		</div> <!-- collapse -filter-content  .// 
-	</article>
-	<article class="list-group-item">
-		<header class="filter-header">
-			<a href="#" data-toggle="collapse" data-target="#collapse2">
-				<i class="icon-action fa fa-chevron-down"></i>
-				<h6 class="title">Second heading </h6>
-			</a>
-		</header>
-		<div class="filter-content collapse show" id="collapse2">
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt deserunt mollit anim id est laborum.	</p>
-		</div>
-	</article>
-	<article class="list-group-item">
-		<header class="filter-header">
-			<a href="#" data-toggle="collapse" data-target="#collapse3">
-				<i class="icon-action fa fa-chevron-down"></i>
-				<h6 class="title">Another title </h6>
-			</a>
-		</header>
-		<div class="filter-content collapse" id="collapse3">
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt deserunt mollit anim id est laborum.	</p>
-		</div>
-	</article>
-</div> <!-- card.//
-
-
-
-
-	</aside>  col -->
-
- 
-
-
-
-
-
-
- 
- 
- <div class="card text-center">
+<div class="card text-center p-3 py-4">
   <div class="card-header">
     CONSELLS
   </div>
@@ -146,19 +76,5 @@ setTimeout("rotando1();",4000);
 <script type="text/javascript">rotando1();</script>
 
 
-<!--Valoracions-->
-<form>
-  <p class="clasificacion" id="calificacio">
-    <input id="radio1" type="radio" name="estrellas" value="5"><!--
-    --><label for="radio1">★</label><!--
-    --><input id="radio2" type="radio" name="estrellas" value="4"><!--
-    --><label for="radio2">★</label><!--
-    --><input id="radio3" type="radio" name="estrellas" value="3"><!--
-    --><label for="radio3">★</label><!--
-    --><input id="radio4" type="radio" name="estrellas" value="2"><!--
-    --><label for="radio4">★</label><!--
-    --><input id="radio5" type="radio" name="estrellas" value="1"><!--
-    --><label for="radio5">★</label>
-  </p>
-</form>
+
 @stop

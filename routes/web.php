@@ -30,7 +30,15 @@ Route::get('/parecangur',[
 
 Route::get('/pares/frontendpares',[   
     'as'=>'frontendpares',      
-    'uses'=>'WebController@frontendpares']); 
+    'uses'=>'PareController@frontendpares']); 
+
+Route::get('/pares/frontendpares/anuncis-cangurs',[   
+    'as'=>'frontendpares',      
+    'uses'=>'PareController@frontendpares']); 
+
+Route::get('/cangurs/anunciscangurs',[   
+    'as'=>'anuncis-cangurs',      
+    'uses'=>'CangurController@index']); 
 
 Route::get('/cangurs/frontendcangur',[   
     'as'=>'frontendcangur',      
@@ -38,6 +46,6 @@ Route::get('/cangurs/frontendcangur',[
 
 
 
-Route::get('/cangurs/anunciscangurs',[   
-    'as'=>'anuncis-cangurs',      
-    'uses'=>'CangurController@index']); 
+Route::get('/cangurs/backend/backendcangur',[   
+    'as'=>'backendcangur',      
+    'uses'=>'CangurController@backendcangur']); 

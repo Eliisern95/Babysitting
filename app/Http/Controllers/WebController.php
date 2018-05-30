@@ -87,11 +87,6 @@ class WebController extends Controller
         return view ("babysitting.parecangur");
     }
     
-      public function frontendpares(){
-        
-        return view ("babysitting.pares.frontendpares");
-    }
-    
 
   
 }

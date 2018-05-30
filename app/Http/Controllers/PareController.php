@@ -13,7 +13,10 @@ class PareController extends Controller
         return view ("babysitting.pares.favorits");
     }
     
-    
+  public function frontendpares(){
+        
+        return view ("babysitting.pares.frontendpares");
+    }    
     
     
 }
