@@ -19,6 +19,7 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
+
 Route::get('/logout',[
           'as'=>'logout',
           'uses'=>'Auth\LoginController@logout']);
@@ -44,8 +45,9 @@ Route::get('/cangurs/frontendcangur',[
     'as'=>'frontendcangur',      
     'uses'=>'CangurController@frontendcangur']); 
 
-
-
-Route::get('/cangurs/backend/backendcangur',[   
+/*Route::get('/cangurs/backend/backendcangur',[   
     'as'=>'backendcangur',      
-    'uses'=>'CangurController@backendcangur']); 
+    'uses'=>'CangurController@backendcangur']); */
+
+Route::resource('/cangurs/backend/backendcangur', 'AnuncisCrudController');
+Route::resource('/cangurs/backend/crear', 'AnuncisCrudController');

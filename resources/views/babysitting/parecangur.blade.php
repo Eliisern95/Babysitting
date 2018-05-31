@@ -43,4 +43,11 @@
     </div>
 </div>
 
+
+<!--Funció per a canviar d'imatge-->
+
+ 
+ 
+
+
 @stop

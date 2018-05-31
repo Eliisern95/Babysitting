@@ -1,5 +1,5 @@
 <footer>
-    <div class="d-flex bg-secondary">
+    <div class="d-flex" id="footer-pare">
         <div class="col-md-4 text-white">
             <h2>ELS NOSTRES ANUNCIS</h2>  
             <H5>

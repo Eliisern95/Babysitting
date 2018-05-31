@@ -2,21 +2,18 @@
 @section ('content')
 
 
+    @foreach($anuncis as $anunci);
+<div>
     <div>
-
-        <h1>Cangur per a l'estiu</h1>           <h1>Preu</h1>
-
-        <h2>Cangur, nanny a Madrid</h2>
-
-        <h3>Sóc una noia de Madrid a quí li agraden molt els nens</h3>
-
-        <p>Hastags</p>
         
-        <button bg-warning>Contacte</button>
+        <h1>{{$anunci->titol}}</h1>           
 
+        <h3>{{$anunci->descripcio}}</h3>
+         
+        <h1>{{$anunci->preu}}</h1>
+        <a class="btn btn-outline-danger btn-sm"  href="" aria-haspopup="true" aria-expanded="false">CREA EL TEU ANUNCI</a>
+      </div>
     </div>
- 
     
-    
-
+@endforeach
 @endsection

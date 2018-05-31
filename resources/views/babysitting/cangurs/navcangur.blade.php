@@ -33,7 +33,7 @@ and open the template in the editor.
     @else
     
     <div class="nav-item dropdown">
-       <a class="btn btn-outline-primary dropdown-toggle dropdown-toggle-split btn-sm" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+       <a class="btn btn-outline-primary dropdown-toggle dropdown-toggle-split btn-sm" href="#" role="button" id="dropdownMenuLink2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             {{ Auth::user()->name }} <span class="caret"></span>
         </a>
 

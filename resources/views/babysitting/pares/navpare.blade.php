@@ -5,7 +5,7 @@ To change this template file, choose Tools | Templates
 and open the template in the editor.
 -->
 <!--Font que m'he baixat per la barra de navegació: spacelab-->   
-<nav class="navbar navbar-expand-lg navbar-dark bg-secondary">
+<nav class="navbar navbar-expand-lg navbar-dark" id="nav-pare">
     <img src="{{asset('imatges/familyicon.jpg')}}" width="100px" height="100px">
     <p class="text-center col-lg-9" id="titol_inici_pares">Benvinguts a Babysitting família!</p>
     <!--Si es cangur -->
@@ -33,7 +33,7 @@ and open the template in the editor.
     @else
     
     <div class="nav-item dropdown">
-       <a class="btn btn-outline-primary dropdown-toggle dropdown-toggle-split btn-sm" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+       <a class="btn btn-outline-info dropdown-toggle dropdown-toggle-split btn-sm" href="#" role="button" id="dropdownMenuLink1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             {{ Auth::user()->name }} <span class="caret"></span>
         </a>
 

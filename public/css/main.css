@@ -28,11 +28,28 @@ nav{
 
 #titol_inici_pares{
     font-family: Noto Sans;
-    font-size: 200%;    
+    font-size: 200%;
+    
+}
+
+#nav-pare{
+    background: #3F729B;
+}
+
+#dropdownMenuLink1{
+    background: #80deea;
+}
+
+#footer-pare{
+     background: #3F729B;
 }
 
 #nav-cangur{
     background: #f57c00;
+}
+
+#dropdownMenuLink2{
+    background: #ffd54f;
 }
 
 #footer-cangur{

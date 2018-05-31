@@ -21,8 +21,15 @@ class HomeController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
-    {
-        return view('babysitting.index');
+    public function index() {
+
+        $tipus = auth()->user()->tipus;
+
+        if ($tipus == 'P') {
+            return view('babysitting/pares/frontendpares');
+        } else {
+            return view('babysitting/cangurs/frontendcangur');
+        }
     }
+
 }
