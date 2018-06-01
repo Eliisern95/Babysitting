@@ -4,7 +4,7 @@
 <!--cos-->
 
 
-<button type="button" id="boto1" class="btn btn-primary btn-lg btn-block" ><a class='text-light' href="{{ route('anuncis-cangurs') }}">ANUNCIA'T! PUBLICA EL TEU ANUNCI!</a></button>
+<button type="button" id="boto1" class="btn btn-primary btn-lg btn-block" ><a class='text-light' href="{{ route('backendcangur.create') }}">ANUNCIA'T! PUBLICA EL TEU ANUNCI!</a></button>
 
 <button type="button" id="boto2" class="btn btn-primary btn-lg btn-block" ><a class='text-light' href="{{ route('anuncis-cangurs') }}">OFERTES!</a></button>
 

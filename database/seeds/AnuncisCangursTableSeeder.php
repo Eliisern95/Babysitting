@@ -18,14 +18,6 @@ class AnuncisCangursTableSeeder extends Seeder
             'preu' => 32
         ]
       );
-        
-            $data = array ([
-            'usuaris' => 2,
-            'titol' => 'Anunci2',
-            'descripcio' => 'Sóc una noia de Madrid a quí li agraden molt els nens!',
-            'preu' => 32
-        ]
-    );    
     AnuncisCangurs::insert($data);  
     }
   }
