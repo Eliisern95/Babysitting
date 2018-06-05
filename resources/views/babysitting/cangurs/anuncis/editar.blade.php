@@ -1,60 +1,68 @@
-@extends('layouts.layout')
-@section('content')
-<div class="row">
-    <section class="content">
-        <div class="col-md-8 col-md-offset-2">
-            @if (count($errors) > 0)
-            <div class="alert alert-danger">
-                <strong>Error!</strong> Revise los campos obligatorios.<br><br>
-                <ul>
-                    @foreach ($errors->all() as $error)
-                    <li>{{ $error }}</li>
-                    @endforeach
-                </ul>
-            </div>
-            @endif
-            @if(Session::has('success'))
-            <div class="alert alert-info">
-                {{Session::get('success')}}
-            </div>
-            @endif
+@extends ('babysitting.cangurs.templatecangur')
+@section ('content')
 
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <h3 class="panel-title">Nou Anunci</h3>
-                </div>
-                <div class="panel-body">
-                    <div class="table-containder">
-                        <form method="POST" action="{{ route('anunciscangur.update',$AnuncisCangur->id)}}" role="form">
-                            {{ csrf_field() }}      
-                            <input name="_method" type="hidden" value="PATCH">
-                            <div class="row">
-                                <div class="col-xs-6 col-sm-6 col-md-6">
-                                    <div class="form-group">
-                                        <input type="text" name="titol" id="titol" class="form-control input-sm" value="{{$AnuncisCangur->titiol}}">
-                                    </div>
-                                </div>
-                                <div class="col-xs-6 col-sm-6 col-md-6">
-                                    <div class="form-group">
-                                        <input type="text" name="descripcio" id="descripcio" class="form-control input-sm" value="{{$AnuncisCangur->descrpcio}}">
-                                    </div>
-                                </div>
-                                <div class="col-xs-6 col-sm-6 col-md-6">
-                                    <div class="form-group">
-                                        <input type="text" name="preu" id="preu" class="form-control input-sm" value="{{$AnuncisCangur->preu}}">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-xs-12 col-sm-12 col-md-12">
-                                    <input type="submit"  value="Actualitzar" class="btn btn-success btn-block">
-                                    <a href="{{ route('anunciscangurs.index') }}" class="btn btn-info btn-block" >Enrere</a>
-                                </div>	
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
+<div class="container text-center">
+    <div class="page-header">
+        <h1>
+            <i class="glyphicon glyphicon-user"></i>
+            ANUNCIS <small>Edita el teu anunci</small>
+        </h1>
+    </div>
+
+
+
+    <div class="">
+        {!! Form::open(['route'=>['update-anunci',$anunci->id]]) !!}
+
+        <div class="formgroup">
+            <label for="titol">Titol:</label>
+            {!!
+            Form::text(
+            'titol',
+            null,
+            array(
+            'class'=>'formcontrol',
+            'placeholder' => 'Introdueix el titol del teu anunci...',
+            'autofocus' => 'autofocus'
+            )
+            )
+            !!}  
         </div>
+
+        <div class="formgroup">
+            <label for="descripcio">Descripció:</label>
+            {!!
+            Form::textarea(
+            'descripcio',
+            null,
+            array(
+            'class'=>'formcontrol'
+            )
+            )
+            !!}
+        </div>
+
+        <div class="formgroup">
+            <label for="preu">Preu:</label>
+            {!!
+            Form::number(
+            'preu',
+            null,
+            array(
+            'class'=>'formcontrol'
+            )
+            )
+            !!}
+        </div>
+
+        <div class="formgroup">
+            {!! Form::submit('Desar', array('class'=>'btn btnprimary'))
+            !!}
+            <a href="{{ route('backendcangur.index') }}" class="btn btnwarning">
+                Cancel∙lar</a>
+        </div>
+
+        {!! Form::close() !!}
+    </div>
 </div>
-    </section>
+@endsection

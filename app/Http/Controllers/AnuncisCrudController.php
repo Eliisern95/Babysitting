@@ -26,8 +26,14 @@ class AnuncisCrudController extends Controller {
      * @return \Illuminate\Http\Response
      */
     public function create() {
-        //
-        return view('babysitting.cangurs.anuncis.crear');
+        
+        $id_usuari = Auth::user()->id;
+      //  $cangur = \App\Cangurs::where('id_usuari',$id_usuari)->firstOrFail();
+        return $id_usuari;
+       // return 'hola';
+       // return $cangur;
+       // return 'Hola';
+      //  return view('babysitting.cangurs.anuncis.crear', compact('cangur'));
     }
 
     /**
@@ -36,43 +42,25 @@ class AnuncisCrudController extends Controller {
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request) {
-        
-        $this->validate($request, [
-            'titol' => 'required|unique:anuncis_cangurs|max:50',
-            'preu' => 'required|unique:anuncis_cangurs'
-        ]);
-
-        $anuncis = AnuncisCangurs::create([
-                    'titol' => 'required|max:255',
-                    'preu' => 'required|unique:anuncis_cangurs',
-                    'descripcio' => 'required'
-        ]);
-
-        $idUsuari = Auth::id();
-        
-        if($validacio){
-            $anuncis = AnuncisCangurs::create([
-              'usuaris'=>$idUsuari,  
-              'titol' => $required->get('titol'),
-              'preu' => $required->get('preu'),
-              'descripcio' => $required->get('descripcio')
-            
+    public function store(Request $request, $id) {
+       /* $validacio = $this->validate($request, [
+            'titol' => 'required|unique:anuncis_cangurs|max:255',
+            'preu' => 'required|unique:anuncis_cangurs',
+            'descripcio' => 'required|max:255'
             ]);
-        }
-
-        $anuncis = AnuncisCangurs::create([
-        'titol' => $request->get('titol'),
-        'preu' => str_slug($request->get('preu')),
-        'descripcio' => $request->get('descripcio')
-       ]);
-
-        $message = $anuncis ? 'success, Registre Creat Satisfactòriament' : 'Anunci no afegit!';
-        return redirect()->route('backendcangur.anunciscangurs.index')->with('message');
-
-        /* $this->validate($request,['titol'=>'required', 'descripcio'=>'required', 'preu'=>'required']);
-          AnuncisCangurs::create($request->all());
-          return redirect()->route(' backendcangur.index')->with('success','Registre Creat Satisfactòriament'); */
+        $idUsuari = Auth::id();
+        if ($validacio) {
+            $anuncis = AnuncisCangurs::create([
+                        'usuaris' => $idUsuari,
+                        'titol' => $request->get('titol'),
+                        'preu' => $request->get('preu'),
+                        'descripcio' => $request->get('descripcio')
+                        
+            ]);
+        }*/
+      /*  $message = $anuncis? 'Anunci creat correctament!' : 'Anunci NO creat!';
+        return redirect()->route('backendcangur.index')->with('message', $message);*/
+        return $id;
     }
 
     /**
@@ -81,11 +69,11 @@ class AnuncisCrudController extends Controller {
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id) {
+    public function show(AnuncisCangurs $anuncis) {
         //
-        $anuncis = AnuncisCangurs::find($id);
+      /*  $anuncis = AnuncisCangurs::find($id);
         // return \Session::get('anunci');
-        return view('anunciscangurs.edit', compact('anuncis'));
+        return view('backendcangur.edit', compact('anuncis'))*/
     }
 
     /**
@@ -95,9 +83,9 @@ class AnuncisCrudController extends Controller {
      * @return \Illuminate\Http\Response
      */
     public function edit($id) {
-        //
-        $AnuncisCangurs = AnuncisCangurs::find($id);
-        return view('anunciscangurs.edit', compact('AnuncisCangurs'));
+        //return "ID" . $id;
+        $anunci = \App\AnuncisCangurs::where('id',$id)->first();
+        return view('babysitting.cangurs.anuncis.editar', compact('anunci'));
     }
 
     /**
@@ -108,10 +96,10 @@ class AnuncisCrudController extends Controller {
      * @return \Illuminate\Http\Response
      */
     public function update(Request $request, $id) {
-        //
+        
         $this->validate($request, ['titol' => 'required', 'descripcio' => 'required', 'preu' => 'required']);
         AnuncisCangurs::find($id)->update($request->all());
-        return redirect()->route('anunciscangurs.index')->with('sucess', 'Registre actualitzat satisfactòriament');
+        return redirect()->route('backendcangur.index')->with('sucess', 'Registre actualitzat satisfactòriament');
     }
 
     /**
@@ -123,7 +111,7 @@ class AnuncisCrudController extends Controller {
     public function destroy($id) {
         //
         AnuncisCangurs::find($id)->delete();
-        return redirect()->route('anunciscangurs.index')->with('sucess', 'Registre borrat satisfactòriament');
+        return redirect()->route('backendcangur.index')->with('sucess', 'Registre borrat satisfactòriament');
     }
 
 }

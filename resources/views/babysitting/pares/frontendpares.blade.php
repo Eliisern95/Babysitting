@@ -5,7 +5,7 @@
 
 
 <!--cos-->
-<button type="button" class="btn btn-primary btn-lg btn-block" ><a class='text-light' href="{{ route('anuncis-cangurs') }}">Llistat de cangurs!</a></button>
+<button type="button" class="btn btn-primary btn-lg btn-block" ><a class='text-light' href="{{ route('backendcangur.create') }}">Llistat de cangurs!</a></button>
 
 <button type="button" class="btn btn-info btn-lg btn-block" ><a class='text-light' href="{{ route('anuncis-cangurs') }}">Els meus cangurs preferits!</a></button>
 

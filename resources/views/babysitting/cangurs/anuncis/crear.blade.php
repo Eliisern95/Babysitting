@@ -1,9 +1,17 @@
 @extends ('babysitting.cangurs.templatecangur')
 @section ('content')
 
+<div class="container text-center">
+    <div class="page-header">
+        <h1>
+            <i class="glyphicon glyphicon-user"></i>
+            ANUNCIS <small>Afageix aquí el teu anunci</small>
+        </h1>
+    </div>
+    
 
-<div class="">
-    {!! Form::open(['route'=>'backendcangur.store']) !!}
+<div class="text-center">
+    {!! Form::open(['route'=>['crear-anunci',$cangur->id]]) !!}
 
 <div class="formgroup">
     <label for="titol">Titol:</label>
@@ -44,20 +52,17 @@
     )
     )
     !!}
-</div>    
-
-<div class="formgroup">
-    <label for="color">Color:</label>
-    <input type="color" name="color" class="formcontrol">
 </div>
 
-<div class="formgroup">
-    {!! Form::submit('Desar', array('class'=>'btn btnprimary'))
-    !!}
-    <a href="{{ route('backendcangur.index') }}" class="btn btnwarning">
-        Cancel∙lar</a>
-</div>
+  <div class="formgroup">
+            {!! Form::submit('Desar', array('class'=>'btn btnprimary'))
+            !!}
+            <a href="{{ route('backendcangur.index') }}" class="btn btnwarning">
+                Cancel∙lar</a>
+        </div>
 
 {!! Form::close() !!}
-</div>
+     </div>
+    </div>
+   
 @endsection

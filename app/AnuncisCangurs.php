@@ -8,6 +8,6 @@ class AnuncisCangurs extends Model
 {
     //
     protected $table = "anuncis_cangurs";
-    protected $fillable = ['titol','descripcio','preu'];
+    protected $fillable = ['usuaris','titol','descripcio','preu'];
     public $timestramps = true;
 }
