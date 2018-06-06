@@ -12,7 +12,7 @@
 
 
     <div class="">
-        {!! Form::open(['route'=>['update-anunci',$anunci->id]]) !!}
+        {!! Form::open(['route'=>'update-anunci']) !!}
 
         <div class="formgroup">
             <label for="titol">Titol:</label>

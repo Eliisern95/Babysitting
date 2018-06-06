@@ -28,6 +28,15 @@ Route::get('/parecangur',[
     'as'=>'parecangur',
     'uses'=>'WebController@parecangur']);
 
+Route::get('/footernannys/',[
+    'as'=>'footernannys',
+    'uses'=>'WebController@footernannys'
+]);
+
+Route::get('/footercangurs/',[
+    'as'=>'footercangurs',
+    'uses'=>'WebController@footercangurs'
+]);
 
 Route::get('/pares/frontendpares',[   
     'as'=>'frontendpares',      
@@ -57,11 +66,15 @@ Route::bind('anunciscangurs',function($AnuncisCangurs){
         return App\AnuncisCangurs::find($AnuncisCangurs);
 });
 
-Route::post('backendcangur/{anunci}', [
+Route::post('/{anunci}', [
     'as' => 'update-anunci',
     'uses' => 'AnuncisCrudController@update']);
 
+Route::get('/edit-anunci/{id}', [
+    'as' => 'edit-anunci',
+    'uses' => 'AnuncisCrudController@edit']);
 
-Route::post('/backendcangur/{id}', [
+
+Route::post('/cangurs/backend/backendcangur/crear-anunci', [
     'as' => 'crear-anunci',
     'uses' => 'AnuncisCrudController@store']);

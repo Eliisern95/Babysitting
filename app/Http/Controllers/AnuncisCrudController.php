@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Cangurs;
 use App\AnuncisCangurs;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -26,14 +27,10 @@ class AnuncisCrudController extends Controller {
      * @return \Illuminate\Http\Response
      */
     public function create() {
-        
+
         $id_usuari = Auth::user()->id;
-      //  $cangur = \App\Cangurs::where('id_usuari',$id_usuari)->firstOrFail();
-        return $id_usuari;
-       // return 'hola';
-       // return $cangur;
-       // return 'Hola';
-      //  return view('babysitting.cangurs.anuncis.crear', compact('cangur'));
+        $cangur = Cangurs::where('id_usuari', $id_usuari)->first();
+        return view('babysitting.cangurs.anuncis.crear', compact('cangur'));
     }
 
     /**
@@ -42,25 +39,24 @@ class AnuncisCrudController extends Controller {
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request, $id) {
-       /* $validacio = $this->validate($request, [
+    public function store(Request $request) {
+        $validacio = $this->validate($request, [
             'titol' => 'required|unique:anuncis_cangurs|max:255',
             'preu' => 'required|unique:anuncis_cangurs',
             'descripcio' => 'required|max:255'
-            ]);
+        ]);
         $idUsuari = Auth::id();
+        $idCangur = Cangurs::where("id_usuari", $idUsuari)->first()->id;
         if ($validacio) {
             $anuncis = AnuncisCangurs::create([
-                        'usuaris' => $idUsuari,
+                        'usuaris' => $idCangur,
                         'titol' => $request->get('titol'),
                         'preu' => $request->get('preu'),
                         'descripcio' => $request->get('descripcio')
-                        
             ]);
-        }*/
-      /*  $message = $anuncis? 'Anunci creat correctament!' : 'Anunci NO creat!';
-        return redirect()->route('backendcangur.index')->with('message', $message);*/
-        return $id;
+        }
+        $message = $anuncis ? 'Anunci creat correctament!' : 'Anunci NO creat!';
+        return redirect()->route('backendcangur.index');
     }
 
     /**
@@ -70,10 +66,9 @@ class AnuncisCrudController extends Controller {
      * @return \Illuminate\Http\Response
      */
     public function show(AnuncisCangurs $anuncis) {
-        //
-      /*  $anuncis = AnuncisCangurs::find($id);
-        // return \Session::get('anunci');
-        return view('backendcangur.edit', compact('anuncis'))*/
+        $anuncis = AnuncisCangurs::find($id);
+        return \Session::get('anunci');
+        return view('backendcangur.edit', compact('anuncis'));
     }
 
     /**
@@ -83,8 +78,8 @@ class AnuncisCrudController extends Controller {
      * @return \Illuminate\Http\Response
      */
     public function edit($id) {
-        //return "ID" . $id;
-        $anunci = \App\AnuncisCangurs::where('id',$id)->first();
+       // $id_usuari = Auth::user()->id;
+         $anunci = AnuncisCangurs::find($id);
         return view('babysitting.cangurs.anuncis.editar', compact('anunci'));
     }
 
@@ -96,10 +91,20 @@ class AnuncisCrudController extends Controller {
      * @return \Illuminate\Http\Response
      */
     public function update(Request $request, $id) {
+          $idUsuari = Auth::id();
+          $this->validate($request, ['titol' => 'required', 'descripcio' => 'required', 'preu' => 'required']);
+          AnuncisCangurs::find($id)->update($request->all());
+          return redirect()->route('backendcangur.index')->with('sucess', 'Registre actualitzat satisfactòriament'); 
+   
+        $anunci->fill($request->all());
+        $anunci->titol = $request->get('titol');
         
-        $this->validate($request, ['titol' => 'required', 'descripcio' => 'required', 'preu' => 'required']);
-        AnuncisCangurs::find($id)->update($request->all());
-        return redirect()->route('backendcangur.index')->with('sucess', 'Registre actualitzat satisfactòriament');
+        $updated = $anunci->save();
+        
+        $message = $update?'Anunci actualitzat correctament!':'Anunci NO actualitzat!';
+        return redirect()->route('backendcangur.index')->with('message',$message);
+        
+        
     }
 
     /**
@@ -110,8 +115,8 @@ class AnuncisCrudController extends Controller {
      */
     public function destroy($id) {
         //
-        AnuncisCangurs::find($id)->delete();
-        return redirect()->route('backendcangur.index')->with('sucess', 'Registre borrat satisfactòriament');
+        $deleted = AnuncisCangurs::destroy($id);
+        return redirect()->route('backendcangur.index');
     }
 
 }

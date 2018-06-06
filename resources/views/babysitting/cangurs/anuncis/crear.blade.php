@@ -4,14 +4,14 @@
 <div class="container text-center">
     <div class="page-header">
         <h1>
-            <i class="glyphicon glyphicon-user"></i>
+            <i class=fa-user"></i>
             ANUNCIS <small>Afageix aquí el teu anunci</small>
         </h1>
     </div>
     
 
 <div class="text-center">
-    {!! Form::open(['route'=>['crear-anunci',$cangur->id]]) !!}
+    {!! Form::open(['route'=>'crear-anunci']) !!}
 
 <div class="formgroup">
     <label for="titol">Titol:</label>
@@ -53,6 +53,12 @@
     )
     !!}
 </div>
+  <!-- 
+ <div class="form-group">
+    <label for="exampleFormControlFile1">Sel·lecciona un fitxer:</label>
+    <input type="file" class="form-control-file" id="exampleFormControlFile1">
+  </div>
+  -->
 
   <div class="formgroup">
             {!! Form::submit('Desar', array('class'=>'btn btnprimary'))

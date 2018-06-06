@@ -13,7 +13,18 @@
         <h1>{{$anunci->preu}}</h1>
         <a class="btn btn-outline-danger btn-sm"  href="{{Route('backendcangur.create')}}" aria-haspopup="true" aria-expanded="false"><i class='fa fa-user'></i>CREA EL TEU ANUNCI</a>
         <a href="{{route('backendcangur.edit', $anunci->id)}}"><button type="button" class="btn btn-warning"><i class ='fa fa-pencil-square'></i>EDITA EL TEU ANUNCI</button></a>
-        <a href="{{route('backendcangur.create', $anunci->id)}}"><button type="button" class="btn btn-danger"><i class ='fa fa-times-circle'></i>ELIMINA EL TEU ANUNCI</button></a>
+        
+        
+        <!--Funció de destroy-->
+      
+        {!! Form::open(['route' => ['backendcangur.destroy', $anunci->id]]) !!}
+                                <input type="hidden" name="_method" value="DELETE">
+                                <button onClick="return confirm('Eliminar anunci?')" class="btn btn-danger">
+                                    <i class="fa fa-trash-o"></i>
+                                </button>
+         {!! Form::close() !!}
+        
+
     </div>
     </div>
     

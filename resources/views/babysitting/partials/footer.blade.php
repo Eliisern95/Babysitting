@@ -2,12 +2,13 @@
     <div class="d-flex">
         <div class="col-md-4 text-white">
             <h2>ELS NOSTRES ANUNCIS</h2>  
-            <H5>
-                Nannys
-            </H5>
-              <H5>
-                Cangurs
-            </H5>
+            <a class="btn btn-outline-success dropdown-toggle-split btn-lg-block" id="nannys"  href="{{ route('footernannys') }}" aria-haspopup="true" aria-expanded="false">
+                  NANNYS
+           </a> 
+          
+            <a class="btn btn-outline-success dropdown-toggle-split btn-lg-block" id="cangurs"  href="{{ route('footercangurs') }}" aria-haspopup="true" aria-expanded="false">
+                  CANGURS
+           </a> 
         </div>    
 
         <div class="col-md-4 text-white">

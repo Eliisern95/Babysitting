@@ -87,6 +87,13 @@ class WebController extends Controller
         return view ("babysitting.parecangur");
     }
     
+    public function footernannys(){
+        return view ("babysitting.partials.footernannys");
+    }
+    
+     public function footercangurs(){
+        return view ("babysitting.partials.footercangurs");
+    }
 
   
 }

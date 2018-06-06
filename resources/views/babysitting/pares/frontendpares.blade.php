@@ -20,9 +20,9 @@
     CONSELLS
   </div>
   <div class="card-body">
-    <h5 class="card-title">Consells de com educar els teus fills</h5>
+    <h5 class="card-title">Vull una cangur que:</h5>
     <p class="card-text1" id="rotando"></p>
-    <a href="#" class="btn btn-primary">Consells de nannys!</a>
+    <a href="#" class="btn btn-primary">Desitjos de pares!</a>
   </div>
   <div class="card-footer text-muted" id="rotando1" id="radio5">
   </div> 
@@ -32,10 +32,14 @@
 <script type="text/javascript">
 var indice = 0;
 frases = new Array();
-frases[0] = "Educa-ls bé";
-frases[1] = "Alimenta-ls bé";
-frases[2] = "Estimal's";
-frases[3] = "Fes que fasin esport";
+frases[0] = "Sigui educada, que no fumi, que parli anglès, que tingui horari fexible\n\
+             - Yolanda Carpio(Encarregada de la secció de PAE d'ISERN Electrodomèstics)";
+frases[1] = "Que parli anglès, que tingui cotxe.\n\
+             - Yaiza Rodriguez(Dependenta de la secció de Post Venda d'ISERN Electrodomèstics";
+frases[2] = "Que tingui entre uns 22 i 30 anys. Que sugui educada\n\
+             - Olga Prims(Fisiotrapeuta del centre FisioCat)";
+frases[3] = "Que a els meus nens els hi agradi\n\
+             - Àngels Aliguer()";
 frases[4] = "Fes que llegeixin molt";
 
 

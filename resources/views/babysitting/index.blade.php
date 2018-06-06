@@ -154,7 +154,9 @@
                                 Visita el nostra <b>Cataleg de cangurs</b>!  
                             </div>
                         </div>
-                         <input class="btn btn-danger" type="submit" value="EM REGISTRO!">
+                         <a class="btn btn-outline-danger dropdown-toggle-split btn-sm"  href="{{ route('register') }}" aria-haspopup="true" aria-expanded="false">
+                             EM REGISTRO!!
+                         </a>
                     </div>
                 </div>
             </div>
@@ -262,9 +264,9 @@
                                 Visita el nostra <b>Cataleg e cangurs</b>!  
                             </div>
                         </div>
-                           <button type="submit" class="btn btn-danger">
-                                    {{ __('EM REGISTRO!') }}
-                                </button>
+                           <a class="btn btn-outline-danger dropdown-toggle-split btn-sm"  href="{{ route('register') }}" aria-haspopup="true" aria-expanded="false">
+                             EM REGISTRO!!
+                         </a>
                     </div>
                 </div>
             </div>
