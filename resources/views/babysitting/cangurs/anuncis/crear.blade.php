@@ -4,8 +4,8 @@
 <div class="container text-center">
     <div class="page-header">
         <h1>
-            <i class=fa-user"></i>
-            ANUNCIS <small>Afageix aquí el teu anunci</small>
+            ANUNCIS <small>Afageix aquí el teu anunci!</small>
+        <i class="fa fa-file-text"></i>
         </h1>
     </div>
     
@@ -53,6 +53,11 @@
     )
     !!}
 </div>
+    
+ <form enctype="multipart/form-data" method="post">
+    <label for="imagen">Puja la imatge:</label>
+    <input type="file" name="imagen" id="imagen">
+</form>   
   <!-- 
  <div class="form-group">
     <label for="exampleFormControlFile1">Sel·lecciona un fitxer:</label>

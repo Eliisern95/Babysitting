@@ -4,18 +4,23 @@ To change this license header, choose License Headers in Project Properties.
 To change this template file, choose Tools | Templates
 and open the template in the editor.
 -->
+
 <!--Font que m'he baixat per la barra de navegació: spacelab-->   
 <nav class="navbar navbar-expand-lg navbar-dark" id="nav-pare">
     <img src="{{asset('imatges/familyicon.jpg')}}" width="100px" height="100px">
     <p class="text-center col-lg-9" id="titol_inici_pares">Benvinguts a Babysitting família!</p>
-    <!--Si es cangur -->
-
+    <div class="align-item-between alert alert-success alert-dismissible fade show p-2 m-2" role="alert">
+        T'has loggejat correctament!
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
 
     @guest
     <div class="collapse navbar-collapse" id="navbarColor01">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item1 m-4">
-                
+
                 <a class="btn btn-outline-success dropdown-toggle dropdown-toggle-split btn-sm"  href="{{ route('parecangur') }}" aria-haspopup="true" aria-expanded="false">
                     Registre't
                 </a>           
@@ -31,13 +36,13 @@ and open the template in the editor.
         </ul>
     </div>
     @else
-    
+
     <div class="nav-item dropdown">
-       <a class="btn btn-outline-info dropdown-toggle dropdown-toggle-split btn-sm" href="#" role="button" id="dropdownMenuLink1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <a class="btn btn-outline-info dropdown-toggle dropdown-toggle-split btn-sm" href="#" role="button" id="dropdownMenuLink1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             {{ Auth::user()->name }} <span class="caret"></span>
         </a>
 
-  <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+        <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
             <a class="dropdown-item" href="{{ route('logout') }}">
                 {{ __('Logout') }}
             </a>

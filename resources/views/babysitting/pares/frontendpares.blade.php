@@ -5,9 +5,9 @@
 
 
 <!--cos-->
-<button type="button" class="btn btn-primary btn-lg btn-block" ><a class='text-light' href="{{ route('backendcangur.create') }}">Llistat de cangurs!</a></button>
+<button type="button" class="btn btn-primary btn-lg btn-block" ><a class='text-light' href="{{ route('backendcangur.index') }}">Llistat de cangurs!</a></button>
 
-<button type="button" class="btn btn-info btn-lg btn-block" ><a class='text-light' href="{{ route('anuncis-cangurs') }}">Els meus cangurs preferits!</a></button>
+<button type="button" class="btn btn-info dropdown-toggle btn-lg btn-block" ><a class='text-light' href="">Els meus cangurs preferits!</a></button>
 
 
  <div style="float:left;width:300px;"></div>
@@ -39,8 +39,7 @@ frases[1] = "Que parli anglès, que tingui cotxe.\n\
 frases[2] = "Que tingui entre uns 22 i 30 anys. Que sugui educada\n\
              - Olga Prims(Fisiotrapeuta del centre FisioCat)";
 frases[3] = "Que a els meus nens els hi agradi\n\
-             - Àngels Aliguer()";
-frases[4] = "Fes que llegeixin molt";
+             - Àngels Aliguer(Autònoma esteticista al centre d'estètica Osona Wellness)";
 
 
 indice = Math.random()*(frases.length);

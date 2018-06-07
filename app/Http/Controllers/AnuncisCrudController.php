@@ -65,10 +65,10 @@ class AnuncisCrudController extends Controller {
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show(AnuncisCangurs $anuncis) {
-        $anuncis = AnuncisCangurs::find($id);
+    public function show($id) {
+      /*  $anuncis = AnuncisCangurs::find($id);
         return \Session::get('anunci');
-        return view('backendcangur.edit', compact('anuncis'));
+        return view('backendcangur.index', compact('anuncis'));*/
     }
 
     /**

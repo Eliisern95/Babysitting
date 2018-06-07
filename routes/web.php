@@ -66,7 +66,7 @@ Route::bind('anunciscangurs',function($AnuncisCangurs){
         return App\AnuncisCangurs::find($AnuncisCangurs);
 });
 
-Route::post('/{anunci}', [
+Route::post('/update-anunci/{id}', [
     'as' => 'update-anunci',
     'uses' => 'AnuncisCrudController@update']);
 
@@ -78,3 +78,8 @@ Route::get('/edit-anunci/{id}', [
 Route::post('/cangurs/backend/backendcangur/crear-anunci', [
     'as' => 'crear-anunci',
     'uses' => 'AnuncisCrudController@store']);
+
+
+Route::get('/cangurs/backend/backendcangur/contacte',[   
+    'as' => 'contacte',      
+    'uses' => 'WebController@contacte']); 

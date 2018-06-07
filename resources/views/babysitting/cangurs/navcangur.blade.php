@@ -4,11 +4,17 @@ To change this license header, choose License Headers in Project Properties.
 To change this template file, choose Tools | Templates
 and open the template in the editor.
 -->
+
 <!--Font que m'he baixat per la barra de navegació: spacelab-->   
 <nav class="navbar navbar-expand-lg navbar-dark" id="nav-cangur">
     <img src="{{asset('imatges/kangaroo_1.png')}}" width="100px" height="100px">
     <p class="text-center col-lg-9" id="titol_inici_cangur">Benvingut a Babysitting Cangur!</p>
-   
+    <div class="align-item-between alert alert-success alert-dismissible fade show p-2 m-2" role="alert">
+        T'has loggejat correctament!
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>   
 
 
     @guest

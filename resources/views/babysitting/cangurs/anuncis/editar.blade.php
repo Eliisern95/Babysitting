@@ -12,14 +12,14 @@
 
 
     <div class="">
-        {!! Form::open(['route'=>'update-anunci']) !!}
+        {!! Form::open(['route'=>['update-anunci',$anunci->id]]) !!}
 
         <div class="formgroup">
             <label for="titol">Titol:</label>
             {!!
             Form::text(
             'titol',
-            null,
+            $anunci->titol,
             array(
             'class'=>'formcontrol',
             'placeholder' => 'Introdueix el titol del teu anunci...',

@@ -16,7 +16,7 @@ and open the template in the editor.
         <ul class="navbar-nav mr-auto">
             <li class="nav-item1 m-4">
                 
-                <a class="btn btn-outline-success dropdown-toggle dropdown-toggle-split btn-sm"  href="{{ route('register') }}" aria-haspopup="true" aria-expanded="false">
+                <a class="btn btn-outline-success dropdown-toggle dropdown-toggle-split btn-sm"  href="{{ route('parecangur') }}" aria-haspopup="true" aria-expanded="false">
                     Registre't
                 </a>           
             </li>
