@@ -15,7 +15,7 @@ class CreateCangursTable extends Migration
     {
         Schema::create('cangurs', function (Blueprint $table) {
             $table->increments('id');
-            $table->integer('id_usuari')->unsigned();
+            $table->integer('id_usuari')->unsigned()->nullable();
             $table->string('sex');
             $table->string('name');
             $table->string('surname');
@@ -27,10 +27,10 @@ class CreateCangursTable extends Migration
             $table->string('password');
             $table->rememberToken();
             $table->timestamps();
-            $table->foreign('id_usuari')
+           /* $table->foreign('id_usuari')
                    ->references('id')
                    ->on('users')
-                   ->onDelete('cascade'); 
+                   ->onDelete('cascade'); */
             
         });
     }

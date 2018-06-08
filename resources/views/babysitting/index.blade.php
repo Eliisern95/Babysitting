@@ -2,8 +2,6 @@
 @section ('content')
 
 
-
-
 <!--Cos-->
 
 <table>

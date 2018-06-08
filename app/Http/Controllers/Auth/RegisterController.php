@@ -71,7 +71,7 @@ class RegisterController extends Controller
             'password' => Hash::make($data['password']),
         ]); */
         
-        
+      $data['id_usuari']=user::max('id');  
      if($data ['parecangur'] == 'pare') {
          return Pares::create([
             'sex' => $data['sexe'],
@@ -86,6 +86,7 @@ class RegisterController extends Controller
              ]);
      }else{
            return Cangurs::create([
+            'id_usuari' =>$data['id_usuari'],  
             'sex' => $data['sexe'],
             'name' => $data['name'],
             'surname' => $data['surname'],

@@ -15,6 +15,7 @@ class CreateParesTable extends Migration
     {
         Schema::create('pares', function (Blueprint $table) {
             $table->increments('id');
+            $table->integer('id_usuari')->unsigned()->nullable();
             $table->string('sex');
             $table->string('name');
             $table->string('surname');

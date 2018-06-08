@@ -16,7 +16,7 @@ class Cangurs extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'sex','name', 'surname', 'direction', 'postalCode', 'poblacio', 'phone', 'email', 'password',
+       'id_usuari', 'sex','name', 'surname', 'direction', 'postalCode', 'poblacio', 'phone', 'email', 'password',
     ];
 
     /**
