@@ -74,12 +74,6 @@ Route::get('/edit-anunci/{id}', [
     'as' => 'edit-anunci',
     'uses' => 'AnuncisCrudController@edit']);
 
-
-Route::post('/cangurs/backend/backendcangur/crear-anunci', [
+Route::post('/backendcangur/crear-anunci', [
     'as' => 'crear-anunci',
     'uses' => 'AnuncisCrudController@store']);
-
-
-Route::get('/cangurs/backend/backendcangur/contacte',[   
-    'as' => 'contacte',      
-    'uses' => 'WebController@contacte']); 

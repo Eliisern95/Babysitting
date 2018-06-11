@@ -1,14 +1,10 @@
 <?php
-
 namespace App\Http\Controllers;
-
 use App\Cangurs;
 use App\AnuncisCangurs;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
-
 class AnuncisCrudController extends Controller {
-
     /**
      * Display a listing of the resource.
      *
@@ -17,22 +13,19 @@ class AnuncisCrudController extends Controller {
     public function index() {
         //
         $anuncis = AnuncisCangurs::all();
-        //
+        
         return view('babysitting.cangurs.backend.backendcangur', compact('anuncis'));
     }
-
     /**
      * Show the form for creating a new resource.
      *
      * @return \Illuminate\Http\Response
      */
     public function create() {
-
-        $id_usuari = Auth::user()->id;
+        $id_usuari = Auth::id();
         $cangur = Cangurs::where('id_usuari', $id_usuari)->first();
         return view('babysitting.cangurs.anuncis.crear', compact('cangur'));
     }
-
     /**
      * Store a newly created resource in storage.
      *
@@ -40,6 +33,8 @@ class AnuncisCrudController extends Controller {
      * @return \Illuminate\Http\Response
      */
     public function store(Request $request) {
+        
+        return $request;
         $validacio = $this->validate($request, [
             'titol' => 'required|unique:anuncis_cangurs|max:255',
             'preu' => 'required|unique:anuncis_cangurs',
@@ -58,7 +53,6 @@ class AnuncisCrudController extends Controller {
         $message = $anuncis ? 'Anunci creat correctament!' : 'Anunci NO creat!';
         return redirect()->route('backendcangur.index');
     }
-
     /**
      * Display the specified resource.
      *
@@ -70,7 +64,6 @@ class AnuncisCrudController extends Controller {
         return \Session::get('anunci');
         return view('backendcangur.index', compact('anuncis'));*/
     }
-
     /**
      * Show the form for editing the specified resource.
      *
@@ -82,7 +75,6 @@ class AnuncisCrudController extends Controller {
          $anunci = AnuncisCangurs::find($id);
         return view('babysitting.cangurs.anuncis.editar', compact('anunci'));
     }
-
     /**
      * Update the specified resource in storage.
      *
@@ -106,7 +98,6 @@ class AnuncisCrudController extends Controller {
         
         
     }
-
     /**
      * Remove the specified resource from storage.
      *
@@ -118,5 +109,4 @@ class AnuncisCrudController extends Controller {
         $deleted = AnuncisCangurs::destroy($id);
         return redirect()->route('backendcangur.index');
     }
-
 }

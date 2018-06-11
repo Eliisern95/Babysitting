@@ -3,8 +3,16 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
+            <file>file:/C:/xampp/htdocs/Projecte/resources/views/babysitting/parecangur.blade.php</file>
             <file>file:/C:/xampp/htdocs/Projecte/app/Http/Controllers/CangurController.php</file>
+            <file>file:/C:/xampp/htdocs/Projecte/app/Http/Controllers/AnuncisCrudController.php</file>
+            <file>file:/C:/xampp/htdocs/Projecte/routes/web.php</file>
+            <file>file:/C:/xampp/htdocs/Projecte/app/Cangurs.php</file>
             <file>file:/C:/xampp/htdocs/Projecte/resources/views/babysitting/cangurs/frontendcangur.blade.php</file>
+            <file>file:/C:/xampp/htdocs/Projecte/app/Http/Controllers/PareController.php</file>
+            <file>file:/C:/xampp/htdocs/Projecte/resources/views/babysitting/pares/frontendpares.blade.php</file>
+            <file>file:/C:/xampp/htdocs/Projecte/app/Http/Controllers/HomeController.php</file>
+            <file>file:/C:/xampp/htdocs/Projecte/public/css/main.css</file>
         </group>
     </open-files>
 </project-private>

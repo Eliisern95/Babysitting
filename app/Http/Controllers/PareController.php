@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use App\Cangurs;
 use Illuminate\Http\Request;
 
 class PareController extends Controller
@@ -14,8 +14,9 @@ class PareController extends Controller
     }
     
   public function frontendpares(){
-        
-        return view ("babysitting.pares.frontendpares");
+        $cangurs = Cangurs::all();
+ 
+        return view ("babysitting.pares.frontendpares", compact ('cangurs'));
     }    
     
     

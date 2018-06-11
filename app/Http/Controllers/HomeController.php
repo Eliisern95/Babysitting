@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
+use App\Cangurs;
 class HomeController extends Controller
 {
     /**
@@ -22,11 +22,13 @@ class HomeController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function index() {
-
+        
         $tipus = auth()->user()->tipus;
 
         if ($tipus == 'P') {
-            return view('babysitting/pares/frontendpares');
+            $cangurs = Cangurs::all();
+      
+            return view('babysitting/pares/frontendpares', compact ('cangurs'));
         } else {
             return view('babysitting/cangurs/frontendcangur');
         }

@@ -66,14 +66,16 @@
   -->
 
   <div class="formgroup">
-            {!! Form::submit('Desar', array('class'=>'btn btnprimary'))
+            {!! Form::submit('Desar',array('class'=>'btn btnprimary'))
             !!}
             <a href="{{ route('backendcangur.index') }}" class="btn btnwarning">
                 Cancel∙lar</a>
         </div>
 
 {!! Form::close() !!}
+
      </div>
     </div>
    
-@endsection
+@stop
+
