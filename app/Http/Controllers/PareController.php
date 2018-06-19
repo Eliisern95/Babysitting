@@ -17,7 +17,12 @@ class PareController extends Controller
         $cangurs = Cangurs::all();
  
         return view ("babysitting.pares.frontendpares", compact ('cangurs'));
-    }    
+    }
+
+public function backendpare(){
+         $cangurs = Cangurs::all();
+    return view ("babysitting.pares.backend.backendpare", compact('cangurs'));
+}   
     
     
 }

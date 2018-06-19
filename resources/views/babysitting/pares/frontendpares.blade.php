@@ -5,7 +5,7 @@
 
 
 <!--cos-->
-<button type="button" class="btn btn-primary btn-lg btn-block" ><a class='text-light' href="{{ route('backendcangur.index') }}">Llistat de cangurs!</a></button>
+<button type="button" class="btn btn-primary btn-lg btn-block" ><a class='text-light' href="{{ route('backendpare') }}">Llistat de cangurs!</a></button>
 
 <div class="btn-group w-100">
 
@@ -60,7 +60,7 @@
 
 
 <div style="float:left;width:300px;"></div>
-<img src="{{asset('imatges/happy-family.jpg')}}" width="1347px" height="500px">
+<img src="{{asset('imatges/happy-family.jpg')}}" style="width:100%" height="500px">
 
 
 

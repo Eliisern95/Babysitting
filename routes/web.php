@@ -54,11 +54,14 @@ Route::get('/cangurs/frontendcangur',[
     'as'=>'frontendcangur',      
     'uses'=>'CangurController@frontendcangur']); 
 
-/*Route::get('/cangurs/backend/backendcangur',[   
+Route::get('/cangurs/backend/backendcangur',[   
     'as'=>'backendcangur',      
-    'uses'=>'CangurController@backendcangur']); */
+    'uses'=>'CangurController@backendcangur']);
 
 
+Route::get('/pares/backed/backendpare',[
+        'as'=>'backendpare',
+        'uses'=>'PareController@backendpare']);
 
 Route::resource('/cangurs/backend/backendcangur', 'AnuncisCrudController');
 

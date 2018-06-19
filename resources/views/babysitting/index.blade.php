@@ -8,14 +8,14 @@
     <tr>
         <td>
             <div style="float:left;width:300px;"></div>
-            <img src="{{asset('imatges/2.2.jpg')}}" width="1347px" height="500px">
+            <img src="{{asset('imatges/2.2.jpg')}}" style="width:100%" height="500px">
         </td>
     </tr>
 </table>
 
 
 <!--Afecta card-->
-<div class="d-flex p-4">
+<div class="row">
     <div class="col-sm-4">
         <div class="card bg-info text-white text-center">
             <div class="card-body"><!--Posar icono de rellotge-->

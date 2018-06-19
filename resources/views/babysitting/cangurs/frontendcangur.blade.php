@@ -8,7 +8,7 @@
 
 
 <div style="float:left;width:300px;"></div>
- <img src="{{asset('imatges/nanny.jpg')}}" width="1347px" height="500px">
+ <img src="{{asset('imatges/nanny.jpg')}}" style="width:100%" height="500px">
 
 
  <div class="card text-center p-3 py-4">

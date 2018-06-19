@@ -53,17 +53,6 @@
     )
     !!}
 </div>
-    
- <form enctype="multipart/form-data" method="post">
-    <label for="imagen">Puja la imatge:</label>
-    <input type="file" name="imagen" id="imagen">
-</form>   
-  <!-- 
- <div class="form-group">
-    <label for="exampleFormControlFile1">Sel·lecciona un fitxer:</label>
-    <input type="file" class="form-control-file" id="exampleFormControlFile1">
-  </div>
-  -->
 
   <div class="formgroup">
             {!! Form::submit('Desar',array('class'=>'btn btnprimary'))

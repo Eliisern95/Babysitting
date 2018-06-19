@@ -34,7 +34,6 @@ class AnuncisCrudController extends Controller {
      */
     public function store(Request $request) {
         
-        return $request;
         $validacio = $this->validate($request, [
             'titol' => 'required|unique:anuncis_cangurs|max:255',
             'preu' => 'required|unique:anuncis_cangurs',

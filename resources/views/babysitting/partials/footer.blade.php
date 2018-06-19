@@ -1,5 +1,5 @@
 <footer>
-    <div class="d-flex">
+ <div class="row">   
         <div class="col-md-4 text-white">
             <h2>ELS NOSTRES ANUNCIS</h2>  
             <h5>
@@ -51,5 +51,5 @@
                 </span>    
             </ul>
         </div>  
-    </div>
+ </div>
 </footer>
