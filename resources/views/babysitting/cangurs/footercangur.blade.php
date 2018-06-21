@@ -1,5 +1,5 @@
 <footer id="footer-cangur">
-    <div class="d-flex">
+    <div class="d-flex flex-wrap">
         <div class="col-md-4 text-white">
             <h2>ELS NOSTRES ANUNCIS</h2>  
             <H5>
@@ -31,8 +31,8 @@
         </div>
 </div>
     
-    <div class="text-center border-top text-white">
-            <h5>Segueixnos</h5>
+    <div id="redera" class="text-center border-top text-white">
+            <h5>Segueix-nos</h5>
                <div id="icones">
             
             <ul class="d-flex justify-content-center align-item-between" id="icones">

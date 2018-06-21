@@ -12,7 +12,7 @@
     <div class="col-md-5 col-md-offset-3">
         <div class="collapse multi-collapse" id="multiCollapseExample1">
             <div class="card card-body">
-                <img src="{{asset('imatges/family.png')}}" width="400px" height="500px" id="lamevaimatge">
+                <img id="babysittingimatgeP" src="{{asset('imatges/family.png')}}" >
                 <a class="btn btn-outline-danger dropdown-toggle-split btn-sm"  href="{{ route('register') }}" aria-haspopup="true" aria-expanded="false">
                     <label class="form-check-label col-form-label" for="pare"></label>
                     EM REGISTRO!</a>
@@ -31,7 +31,7 @@
     <div class="col-md-5 col-md-offset-3">
         <div class="collapse multi-collapse" id="multiCollapseExample2">
             <div class="card card-body">
-                <img src="{{asset('imatges/1.1.png')}}" width="400px" height="500px">
+                <img id="babysittingimatgeC" src="{{asset('imatges/1.1.png')}}">
                 <a class="btn btn-outline-danger dropdown-toggle-split btn-sm"  href="{{ route('register') }}" aria-haspopup="true" aria-expanded="false">
                     <label class="form-check-label col-form-label" for="cangur"></label>
                     EM REGISTRO!</a>

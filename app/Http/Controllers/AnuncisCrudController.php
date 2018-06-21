@@ -40,10 +40,9 @@ class AnuncisCrudController extends Controller {
             'descripcio' => 'required|max:255'
         ]);
         $idUsuari = Auth::id();
-        $idCangur = Cangurs::where("id_usuari", $idUsuari)->first()->id;
         if ($validacio) {
             $anuncis = AnuncisCangurs::create([
-                        'usuaris' => $idCangur,
+                        'usuaris' => $idUsuari,
                         'titol' => $request->get('titol'),
                         'preu' => $request->get('preu'),
                         'descripcio' => $request->get('descripcio')

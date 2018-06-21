@@ -6,7 +6,6 @@ and open the template in the editor.
 -->
 
 <!--Font que m'he baixat per la barra de navegació: spacelab-->  
-<meta name="viewport" content="width=device-width, initial-scale=1">
 <nav class="navbar navbar-expand-lg navbar-dark" id="nav-pare">
     <img src="{{asset('imatges/familyicon.jpg')}}" width="100px" height="100px">
     <p class="text-center col-lg-9" id="titol_inici_pares">Benvinguts a Babysitting família!</p>

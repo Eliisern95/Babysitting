@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 use App\Cangurs;
+use App\Consells;
+use App\AnuncisCangurs;
 use Illuminate\Http\Request;
 
 class PareController extends Controller
@@ -15,13 +17,13 @@ class PareController extends Controller
     
   public function frontendpares(){
         $cangurs = Cangurs::all();
- 
-        return view ("babysitting.pares.frontendpares", compact ('cangurs'));
+        $consells = Consells::all();
+        return view ("babysitting.pares.frontendpares", compact ('cangurs'), compact('consells'));
     }
 
 public function backendpare(){
-         $cangurs = Cangurs::all();
-    return view ("babysitting.pares.backend.backendpare", compact('cangurs'));
+         $anuncis = \App\AnuncisCangurs::all();
+    return view ("babysitting.pares.backend.backendpare", compact('anuncis'));
 }   
     
     

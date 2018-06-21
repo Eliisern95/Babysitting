@@ -7,8 +7,7 @@
 <table>
     <tr>
         <td>
-            <div style="float:left;width:300px;"></div>
-            <img src="{{asset('imatges/2.2.jpg')}}" style="width:100%" height="500px">
+            <img id="babysittingimatge" src="{{asset('imatges/2.2.jpg')}}" >
         </td>
     </tr>
 </table>
@@ -63,7 +62,7 @@
                         <div class="card-header" id="headingOne">
                             <h5 class="mb-0">
                                 <button class="btn btn-link text-red"  data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                    Quin tipus d'atencció escullir? Necessito ajuda!
+                                    Quin tipus d'atencció escullir?
                                 </button>
                             </h5>
                         </div>
@@ -177,7 +176,7 @@
                         <div class="card-header" id="headingOne">
                             <h5 class="mb-0">
                                 <button class="btn btn-link text-red"  data-toggle="collapse" data-target="#collapseOne1" aria-expanded="true" aria-controls="collapseOne">
-                               La web és gratuïta per a cangurs?                                
+                                La web és gratuïta per a cangurs?                                
                                 </button>
                             </h5>
                         </div>
@@ -198,7 +197,7 @@
                         <div class="card-header" id="headingTwo">
                             <h5 class="mb-0">
                                 <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo2" aria-expanded="false" aria-controls="collapseTwo">
-                                  No tinc formació especifica, puc oferir els meus serveis?
+                                    No tinc formació especifica,<br> puc oferir els meus serveis?
                                 </button>
                             </h5>
                         </div>

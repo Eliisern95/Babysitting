@@ -1,6 +1,6 @@
 <footer>
-    <div class="d-flex" id="footer-pare">
-        <div class="col-md-4 text-white">
+    <div class="d-flex flex-wrap" id="footer-pare">
+        <div class="col-lg-4 text-white">
             <h2>ELS NOSTRES ANUNCIS</h2>  
             <H5>
                 Nannys
@@ -10,7 +10,7 @@
             </H5>
         </div>    
 
-        <div class="col-md-4 text-white">
+        <div class="col-lg-4 text-white">
             <h2>AJUDA I CONSELLS</h2>
             
             <H5>
@@ -19,7 +19,7 @@
             </H5>
         </div>
         
-         <div class="col-md-4 text-white">
+         <div class="col-lg-4 text-white">
             <h2>CONDICIONS</h2>
             
             <H5>
@@ -31,8 +31,8 @@
         </div>
 </div>
     
-    <div class="text-center border-top text-white bg-secondary">
-            <h5>Segueixnos</h5>
+    <div id="redera" class="text-center border-top text-white bg-secondary">
+            <h5>Segueix-nos</h5>
                <div id="icones">
             
             <ul class="d-flex justify-content-center align-item-between" id="icones">

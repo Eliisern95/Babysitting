@@ -5,13 +5,13 @@
 
 
 <!--cos-->
-<button type="button" class="btn btn-primary btn-lg btn-block" ><a class='text-light' href="{{ route('backendpare') }}">Llistat de cangurs!</a></button>
+<a class='text-light' href="{{ route('backendpare') }}"><button type="button" class="btn btn-primary btn-lg btn-block" >Llistat de cangurs!</button></a>
 
 <div class="btn-group w-100">
 
     <button type="button" class="btn btn-info dropdown-toggle btn-lg btn-block" data-toggle="dropdown" ><a class='text-light' href="">Els meus cangurs preferits!</a></button>
 
-    <ul class="dropdown-menu w-100 text-center" role="menu" id="cangurstop">
+    <ul class="dropdown-menu text-center" role="menu" id="cangurstop">
         <div class="row align-items-center justify-content-center display-flex">
             <div class="col-sm-6 p-6">
 
@@ -22,7 +22,7 @@
             </div>
         </div>
         
-        <div class="row align-items-center justify-content-center display-flex">
+        <div class="d-flex align-items-center justify-content-center display-flex">
             <div class="col-sm-6 p-6 align-items-center justify-content-center">
                 <li><h1>#Top 2</h1></li>
                 <div>Alba Gimenez</div>
@@ -59,8 +59,7 @@
 </div>
 
 
-<div style="float:left;width:300px;"></div>
-<img src="{{asset('imatges/happy-family.jpg')}}" style="width:100%" height="500px">
+<img id="babysittingimatge" src="{{asset('imatges/happy-family.jpg')}}">
 
 
 
@@ -80,15 +79,13 @@
 <!--Script de rotació de missatges-->
 <script type="text/javascript">
     var index = 0;
-    frases = new Array();
-    frases[0] = "Sigui educada, que no fumi, que parli anglès, que tingui horari fexible\n\
-             - Yolanda Carpio(Encarregada de la secció de PAE d'ISERN Electrodomèstics)";
-    frases[1] = "Que parli anglès, que tingui cotxe.\n\
-             - Yaiza Rodriguez(Dependenta de la secció de Post Venda d'ISERN Electrodomèstics";
-    frases[2] = "Que tingui entre uns 22 i 30 anys. Que sugui educada\n\
-             - Olga Prims(Fisiotrapeuta del centre FisioCat)";
-    frases[3] = "Que a els meus nens els hi agradi\n\
-             - Àngels Aliguer(Autònoma esteticista al centre d'estètica Osona Wellness)";
+   
+    
+    var frases = new Array( @foreach ($consells as $consell)"{{$consell->consell}} - {{$consell->pare}}", @endforeach);
+  
+    for (var i = 0; i < frases.length; i++) {
+    frases[i] ; 
+}
 
 
     index = Math.random() * (frases.length);
@@ -100,11 +97,11 @@
         }
         document.getElementById("girar").innerHTML = frases[index];
         index++;
-        setTimeout("girar();", 4000);
+        setTimeout("girar()", 4000);
     }
 </script>
 <div id="girar" style="height:60px;margin:0px auto;"></div>
-<script type="text/javascript">girar();</script>
+<script type="text/javascript">girar()</script>
 
 <script type="text/javascript">
     var index1 = 0;
@@ -125,11 +122,11 @@
         }
         document.getElementById("girar1").innerHTML = hora[index1];
         index1++;
-        setTimeout("girar1();", 4000);
+        setTimeout("girar1()", 4000);
     }
 </script>
-<div id="girar" style="height:60px;margin:0px auto;"></div>
-<script type="text/javascript">girar1();</script>
+<div id="girar" style="height:60px; margin:0px auto;"></div>
+<script type="text/javascript">girar1()</script>
 
 
 

@@ -3,12 +3,11 @@
 
 <!--cos-->
 
-
+<div class="d-flex flex-center flex-wrap">
 <button type="button" id="boto1" class="btn btn-primary btn-lg btn-block" ><a class='text-light' href="{{ route('backendcangur.create') }}">ANUNCIA'T! PUBLICA EL TEU ANUNCI!</a></button>
+</div>
 
-
-<div style="float:left;width:300px;"></div>
- <img src="{{asset('imatges/nanny.jpg')}}" style="width:100%" height="500px">
+ <img id="babysittingimatge" src="{{asset('imatges/nanny.jpg')}}">
 
 
  <div class="card text-center p-3 py-4">
@@ -75,6 +74,5 @@
 </script>
 <div id="girar" style="height:60px;margin:0px auto;"></div>
 <script type="text/javascript">girar1();</script>
-
 
 @stop
